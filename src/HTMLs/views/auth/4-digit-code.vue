@@ -1,0 +1,45 @@
+---
+layout : default.html
+title : My Tech Hunter - HTML version
+---
+
+  <div class="container">
+    <div class="row no-gutters justify-content-center">
+      <ul class="steps">
+        <li class="active">Choose Subscription</li>
+
+        <li class="active">Business Information</li>
+
+        <li class="active">Payment confirmation</li>
+
+        <li class="active">SMS Verification & Email Activation</li>
+      </ul>
+      <div class="col-md-10">
+        <div class="auth-page-title text-center py-5">
+          <h1>
+            Enter your 4 Digit verification code <br />
+            to verify your business contact
+          </h1>
+        </div>
+
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-6">
+            <form class="text-center">
+              <div class="verification-code-inputs d-flex">
+                <input maxlength="1" type="text" />
+                <input maxlength="1" type="text" />
+                <input maxlength="1" type="text" />
+                <input maxlength="1" type="text" />
+              </div>
+              <button class="btn btn-primary">Verify</button>
+              <div class="my-4">
+                Didn't receive the SMS Code ?
+                <a href="#"> Please send it again</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Imran project</title>
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width initial-scale=1.0, maximum-scale=1.0,
+          minimum-scale=1.0, user-scalable=no shrink-to-fit=no">
+    <meta name="google-site-verification"
+          content="" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&display=swap"
+          rel="stylesheet">
+
+    <link
+          href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap"
+          rel="stylesheet">
+    <link
+          href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="../public/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+             <!-- custom-css -->
+    <link rel="stylesheet" href="../public/libs/animate.min.css" />
+
+          <!-- custom-css -->
+    <link rel="stylesheet" href="../public/css/app.css" />
+
+    <script type="text/javascript" src="../public/libs/wow.min.js"></script>
+
+    <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+          integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+          crossorigin="anonymous"></script>
+    <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+          integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+          crossorigin="anonymous"></script>
+          <!-- ionicons-->
+          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+          <!--swiperjs-->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="../public/libs/pace.min.js"></script>
+
+    <!-- google maps -->
+    <!-- <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANIg-GgobIKa95MgdD4_WwreBVpregN6c&libraries=places&v=3.31"></script> -->
+</head>
+<body>
+<main>
+    
+  <header style="background:url('/images/tiger-header.jpg') center center no-repeat; background-size:cover;">
+    <div class="top-header">
+      <div class="container">
+
+        <ul class="list-group list-group-horizontal">
+          <li class="social-network fb">
+            <a href="#">
+              <i class="fa fa-facebook"/>
+            </a>
+          </li>
+
+          <li class="social-network tw">
+            <a href="#">
+              <i class="fa fa-twitter"/>
+            </a>
+          </li>
+
+          <li class="social-network in">
+            <a href="#">
+              <i class="fa fa-linkedin"/>
+            </a>
+          </li>
+
+          <li>
+            &nbsp;
+          </li>
+          <li>
+            <a href="/ads">Advertisements</a> 
+          </li>
+          <li>
+            <a href="/why">Why us ?</a> 
+          </li>
+          <li>
+            <b-dropdown>
+              <template #button-content>
+                Languages
+               
+              <b-dropdown-item href="#">EN</b-dropdown-item>
+              <b-dropdown-item href="#">FR</b-dropdown-item>
+            </b-dropdown>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="/" id="logo">
+            <img style="width:100%;" src="/images/logo-white.png"/>
+          </a> 
+        </div>
+        <div class="col-md-8" class="py-4 d-flex justify-content-end align-content-center section-sign-in">
+
+          <button v-b-modal.become-a-member variant="primary" class="mr-4 become-a-member">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Become a Member
+          </button>
+          <b-dropdown class="mr-4 for-business" variant="primary">
+            <template #button-content>
+              <i class="fa fa-briefcase" aria-hidden="true"></i> Business
+             
+            <b-dropdown-item href="/become-tech-hunter">
+              <i class="fa fa-user-circle" aria-hidden="true"></i> Become a Tech Hunter Pro
+            </b-dropdown-item>
+            <b-dropdown-item href="/create-business">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              Create a Business
+            </b-dropdown-item>
+            <b-dropdown-item href="/create-post">
+              <i class="fa fa-list" aria-hidden="true"></i> Post an advertisement
+            </b-dropdown-item>
+            <b-dropdown-item href="/create-promotion">
+              <i class="fa fa-tag" aria-hidden="true"></i> Post promotions
+            </b-dropdown-item>
+          </b-dropdown>
+          <b-dropdown class="profile-dropdown">
+            <template #button-content>
+              <span v-if="isAuthenticated">
+                <div src="/images/avatars/avatar-5.png" size="36"></div>
+                Account
+              </span>
+              <span v-else>
+                <i class="fa fa-user"></i>
+              Login
+              </span>
+             
+
+            <div class="logged-in-profile" v-if="isAuthenticated">
+              <div class="dropdown-profile-info">
+                <div class="d-flex">
+                  <div src="/images/avatars/avatar-5.png" size="72"></div>
+                  <div>
+                    <h4>
+                      Andrew Emiliya
+                    </h4>
+                    <a class="btn btn-link" href="mailto:andrewemilya@gmail.com">andrewemilya@gmail.com</a>
+                    <span class="badge badge-warning">
+                                Hunter Member
+                              </span>
+                    <a href="/profile" class="btn btn-link">View Profile</a> 
+                  </div>
+                </div>
+
+              </div>
+              <ul>
+                <li>
+                  <a href="/"><i class="fa fa-comments-o" aria-hidden="true"></i> Give feedback improve
+                    MyTechHunter
+                  </a> 
+                </li>
+                <li>
+                  <a href="/">
+
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    Settings & Privacy
+                  </a> 
+                </li>
+                <li>
+                  <a href="/">
+
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Messages
+                  </a> 
+                </li>
+                <li>
+                  <a href="/logout">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    Log out
+                  </a> 
+                </li>
+              </ul>
+            </div>
+
+            <b-dropdown-form v-else>
+              <b-overlay
+                  :show="busy"
+                  rounded
+                  opacity="0.6"
+                  spinner-small
+                  spinner-variant="primary"
+                  class="d-inline-block"
+              >
+
+                <p>
+                  <strong>
+                    User Registration
+                  </strong>
+                </p>
+                <b-form-group label-for="dropdown-form-email" @submit.stop.prevent>
+                  <input
+                      id="dropdown-form-email"
+                      size="sm"
+                      placeholder="email@example.com"
+                  />
+                </b-form-group>
+                <b-form-group label-for="dropdown-form-password">
+                  <input
+                      id="dropdown-form-password"
+                      type="password"
+                      size="sm"
+                      placeholder="Password"
+                  />
+                </b-form-group>
+                <b-form-checkbox class="mb-3">Remember me</b-form-checkbox>
+                <div class="d-flex align-content-center">
+                  <button variant="primary" class="btn-block" @click="Login">Login</button>
+                </div>
+              </b-overlay>
+            </b-dropdown-form>
+            <b-dropdown-item href="/register" v-if="!isAuthenticated">
+              <i class="fa fa-user" aria-hidden="true"></i>
+             Register
+
+            </b-dropdown-item>
+          </b-dropdown>
+          <button class="btn btn-icon ml-4" v-if="isAuthenticated">
+            <i class="fa fa-bell-o"></i>
+            <span class="badge badge-danger">
+                  03
+                </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <b-navbar toggleable="lg" variant="primary">
+      <div class="container">
+        <div class="d-flex mobile-toggle justify-content-between">
+          <b-navbar-toggle target="nav-collapse" class="mobile-menu">
+            <img src="/svgs/menu.svg"/>
+          </b-navbar-toggle>
+          <a href="/">
+            <img class="logo" src="/images/favicon.png"/>
+          </a> 
+          <div>
+            <b-dropdown class="mr-4 profile-dropdown">
+              <template #button-content>
+                <img src="/svgs/user.svg"/>
+               
+              <div class="logged-in-profile" v-if="isAuthenticated">
+                <div class="dropdown-profile-info">
+                  <div class="d-flex">
+                    <div src="/images/avatars/avatar-5.png" size="72"></div>
+                    <div>
+                      <h4>
+                        Andrew Emiliya
+                      </h4>
+                      <a class="btn btn-link" href="mailto:andrewemilya@gmail.com">andrewemilya@gmail.com</a>
+                      <span class="badge badge-warning">
+                                Hunter Member
+                              </span>
+                      <a href="/profile" class="btn btn-link">View Profile</a> 
+                    </div>
+                  </div>
+
+                </div>
+                <ul>
+
+                  <li>
+                    <a href="/"><i class="fa fa-comments-o" aria-hidden="true"></i> Give feedback improve
+                      MyTechHunter
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/">
+
+                      <i class="fa fa-cogs" aria-hidden="true"></i>
+                      Settings & Privacy
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/">
+
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      Messages
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/logout">
+                      <i class="fa fa-power-off" aria-hidden="true"></i>
+                      Log out
+                    </a> 
+                  </li>
+
+
+                </ul>
+              </div>
+
+              <b-dropdown-form v-else>
+                <b-overlay
+                    :show="busy"
+                    rounded
+                    opacity="0.6"
+                    spinner-small
+                    spinner-variant="primary"
+                    class="d-inline-block"
+                >
+                  <b-form-group label="Email" label-for="dropdown-form-email" @submit.stop.prevent>
+                    <input
+                        id="dropdown-form-email"
+                        size="sm"
+                        placeholder="email@example.com"
+                    />
+                  </b-form-group>
+                  <b-form-group label="Password" label-for="dropdown-form-password">
+                    <input
+                        id="dropdown-form-password"
+                        type="password"
+                        size="sm"
+                        placeholder="Password"
+                    />
+                  </b-form-group>
+                  <b-form-checkbox class="mb-3">Remember me</b-form-checkbox>
+                  <div class="d-flex align-content-center">
+                    <button variant="primary" class="btn-block" @click="Login">Sign In</button>
+
+
+                  </div>
+                </b-overlay>
+              </b-dropdown-form>
+              <b-dropdown-item href="/register" v-if="!isAuthenticated">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Create an account
+              </b-dropdown-item>
+            </b-dropdown>
+          </div>
+        </div>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <li>
+              <button v-b-modal.become-a-member variant="primary" class="mr-4 become-a-member">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Become a Member
+              </button>
+              <b-dropdown class="for-business" variant="primary">
+                <template #button-content>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Business
+                 
+                <b-dropdown-item href="/get-tech-hunter">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i> Become a Tech Hunter Pro
+                </b-dropdown-item>
+                <b-dropdown-item href="/create-business">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  Create a Business
+                </b-dropdown-item>
+                <b-dropdown-item href="/create-post">
+                  <i class="fa fa-list" aria-hidden="true"></i> Post an advertisement
+                </b-dropdown-item>
+                <b-dropdown-item href="/create-promotion">
+                  <i class="fa fa-tag" aria-hidden="true"></i> Post promotions
+                </b-dropdown-item>
+              </b-dropdown>
+            </li>
+
+            <li>
+              <a href="/">Network & Security
+
+                <i class="fa fa-caret-down"></i>
+              </a> 
+              <div class="container" fluid>
+                <div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <ul class="row">
+                        <li class="col-md-6">
+                          <a href="/">PC Repair</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Printer Repair</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Servers Repair</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Routers & Switchers Repair</a> 
+                        </li>
+
+                        <li class="col-md-6">
+                          <a href="/">Corporate-LANs/WANs troubleshooting</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Computer hardware/software troubleshooting</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Network Security implementation</a> 
+                        </li>
+
+
+                        <li class="col-md-6">
+                          <a href="/">Mobile phone repair</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Staff training</a> 
+                        </li>
+                        <li class="col-md-6">
+                          <a href="/">Network Security implementation</a> 
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/">Tech Support</a> 
+            </li>
+            <li>
+              <a href="/">Remote Services</a> 
+            </li>
+            <li>
+              <a href="/">Repair & Services</a> 
+            </li>
+            <li>
+              <a href="/">Development</a> 
+            </li>
+            <li>
+              <a href="/">Network & Security</a> 
+            </li>
+            <li>
+              <aclass="btn btn-success btn-sm" href="/all-promotions">
+                  <span class="badge badge-danger">
+24
+                  </span>
+                Show Promotions
+              </a> 
+            </li>
+          </b-navbar-nav>
+        </b-collapse>
+      </div>
+    </b-navbar>
+  </header>
+ 
+
+
+
+    
+
+
+    <div id="page-contact">
+      <div class="section-title static-pages"
+           style="background:url('/images/contact-us.jpeg') center center no-repeat; background-size: cover;">
+        <div class="container position-relative">
+          <h2>
+            CONTACT US
+            <span>
+           Get in touch with us !
+         </span>
+          </h2>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <p class="text-center my-4">
+              No personal technical questions will be answered here.
+              This page is only for website related support requests.
+            </p>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="container" fluid>
+        <div class="row">
+          <div class="col-md-12">
+            <GmapMap
+                :center="{lat:39.7594, lng:-100.4340}"
+                :zoom="6"
+                style="width: 100%; height: 400px"
+            >
+              <GmapMarker
+                  icon="/images/map_marker.png"
+                  :position="{lat:39.7594, lng:-100.4340}"
+                  :clickable="true"
+                  :draggable="false"
+                  @click="center={lat:39.7594, lng:-100.4340}"
+              />
+
+            </GmapMap>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="my-tech-contact">
+              <h3>
+                My Tech Hunters<br>Headquarters
+              </h3>
+              <p>
+
+                <i class="fa fa-map-marker"></i> 1859 SE Port St Lucie Blvd. <br>
+                Port St Lucie, FL 34952<br>
+              </p>
+              <p>
+                <i class="fa fa-envelope-o"></i> <a href="maito:info@mytechhunter.com">info@mytechhunter.com</a><br>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i> <a href="tel:772.249.3796">
+                772.249.3796
+              </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form class="my-tech-contact-form">
+              <p>
+                &nbsp;
+              </p>
+              <h3 class="text-center">
+                Send us your Feedback / Inquiry
+              </h3>
+              <input type="text" placeholder="Full name" required/>
+              <input type="email" placeholder="Email address" required/>
+              <input type="number" placeholder="Contact"/>
+              <textarea rows="5" placeholder="Messages / Inquiry"></b-textarea>
+              <button class="btn btn-primary">
+                <i class="fa fa-envelope"></i> Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> Business </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Become a Tech Pro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post an advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> Network & security </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Become a Tech Pro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post an advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> Remote Support </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Become a Tech Pro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post an advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> Repair & Services </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Become a Tech Pro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post an advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> Development </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Become a Tech Pro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post an advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Post promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="#">
+                            <strong> About TechHunter </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about-us">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/contact-us">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ads">
+                            Advertisements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/why">
+                            Why My Tech Hunter ?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-3" sm="6">
+                <ul class="list-group">
+                    <li>
+                        <a href="/">
+                            <strong> Become a Member </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/get-tech-hunter">
+                            Get a Tech Hunter Pro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/become-tech-hunter">
+                            Become a Tech Hunter Pro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/create-business">
+                            Create a Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/create-promotion">
+                            Post Promotions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/create-post">
+                            Create Post (services)
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <form class="form-subscription">
+                    <h2>
+                        Subscribe for Newsletter
+                    </h2>
+                    <p>
+                        Sign up for our latest news & articles. We
+                        won’t give you spam mails.
+                    </p>
+                    <b-form-group>
+                        <input type="email" required/>
+                        <button variant="primary" @click="subscribe">
+                            <i class="fa fa-envelope"></i>
+                            Email
+                        </button>
+                    </b-form-group>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <p class="text-white">
+                    <strong>
+                        My Tech Hunters
+                        Headquarters<br>
+                    </strong>
+                    1859 SE Port St Lucie Blvd.<br>
+                    Port St Lucie, FL 34952<br>
+
+                    info@mytechhunter.com<br>
+
+                    772.249.3796
+                    <br><br>
+                </p>
+
+
+
+                <div class="social-network-icons">
+                    <a href="#" class="social-network fb">
+                        <i class="fa fa-facebook" />
+                        </a>
+
+
+                        <a class="social-network tw">
+                            <i class="fa fa-twitter" />
+                            </a>
+
+
+                            <a class="social-network in">
+                                <i class="fa fa-linkedin" />
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </footer>
+
+</body>
+</html>
+

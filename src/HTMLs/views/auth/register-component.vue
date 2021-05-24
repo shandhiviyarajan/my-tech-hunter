@@ -1,0 +1,62 @@
+---
+layout : default.html
+title : My Tech Hunter - HTML version
+---
+    <div class="container auth-container">
+      <div class="row no-gutters justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="auth-page-title">
+                <h1>
+                  Create a free account
+                </h1>
+                <h3>
+                  Creating an account in <span>MyTechHunter</span> will help you<br>
+                  to post ads, post services & maintain your Business Information.
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 pr-md-5">
+              <div class="form-title">
+               Register
+
+                <div>
+                  All ready have an account ? <a href="/login">Login here</a> 
+                </div>
+              </div>
+              <form>
+                <input type="text" required placeholder="Firstname"/>
+                <input type="email" required placeholder="Email Address"/>
+                <input type="password" required placeholder="Choose a password"/>
+                <button class="btn mb-4" variant="primary" href="/verify-sms">
+                  Create Account
+                </button>
+
+                <div class="mt-4">
+                  Don’t you have an account ?
+                  <a href="/verify-sms" >
+                    Create an account
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 pl-4">
+         <div class="card register-info-card">
+           <div class="card-text">
+             After registration you have to<br>
+             convert your account into professional account<br>
+             to post services & to maintain a business profile
+           </div>
+         </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
