@@ -416,17 +416,12 @@
                 }
 
             }
-
-
-
             return {
                 init: function () {
                     _initCharts();
                 }
             }
         }
-
-
         function SinglePage() {
 
             function _single_page_gallery() {
