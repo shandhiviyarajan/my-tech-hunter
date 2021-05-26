@@ -222,8 +222,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     // grunt.loadNpmTasks('grunt-babel');
 
-    grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy']);
-    grunt.registerTask('ftp', ['clean', 'sass', 'assemble', 'copy', 'ftp-diff-deployer']);
+    grunt.registerTask('default', ['clean', 'assemble', 'copy']);
+    grunt.registerTask('ftp', ['clean',, 'assemble', 'copy', 'ftp-diff-deployer']);
     grunt.registerTask('email', ['inlinecss', 'watch:inlinecss', 'newer:copy']);
     grunt.registerTask('server', ['express', 'watch']);
     grunt.registerTask('plugins', ['concat']);

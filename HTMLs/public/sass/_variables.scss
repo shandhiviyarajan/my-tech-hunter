@@ -1,0 +1,39 @@
+$primary: #856e48;
+$primary_hover:#5e4d31;
+$success: #01d6ae;
+$warning: #FFA638;
+$danger: #FF0000;
+$placeholder: rgba(112, 88, 88, 0.01);
+$blue: #0068FF;
+$orange_light: #FFA638;
+$orange_dark: #D38D56;
+$orange:#FFA638;
+$secondary:#fff;
+
+$gutters: 24px;
+$font_primary:  'Inter', sans-serif;
+$font_secondary : 'Merriweather', serif;
+$gray:#666;
+$gray-100:#999;
+$gray-300:#888;
+.bg-transparent {
+  background: none !important;
+}
+$link-color:rgb(0, 94, 255);
+
+.bg-warning {
+  background-color: $orange_light !important;
+}
+
+.bg-success {
+  background-color: $success !important;
+}
+
+
+
+.text-warning{
+  color:$orange !important;
+}
+.text-primary{
+  color:$primary !important;
+}

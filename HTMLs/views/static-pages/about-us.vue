@@ -8,7 +8,7 @@ title: My Tech Hunter - HTML version
     <div
       class="section-title static-pages"
       style="
-        background: url('/images/about-us.jpeg') center center repeat;
+        background: url('{{assets}}images/about-us.jpeg') center center repeat;
         background-size: cover;
       "
     >
