@@ -1,7 +1,14 @@
 header {
-    position: sticky;
-    background: rgb(255, 255, 255);
-    top: 0px;
-    width: 100%;
-    z-index: 1020;
+  position: sticky;
+  background: rgb(255, 255, 255);
+  top: 0px;
+  width: 100%;
+  z-index: 1020;
+
+  #logo {
+    display: block;
+    img {
+      margin-top: -16px;
+    }
   }
+}

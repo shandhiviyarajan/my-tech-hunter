@@ -35,22 +35,15 @@
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           />
           <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
- 
-
-          <!-- custom-css -->
-    <link rel="stylesheet" href="../public/css/app.css" />
-
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.x/css/font-awesome.min.css" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-    
-    
+               <!-- custom-css -->
+      <link rel="stylesheet" href="../public/css/app.css" />
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      
-    
     <script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
           integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
@@ -68,6 +61,8 @@
    
           <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+          <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- google maps -->
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANIg-GgobIKa95MgdD4_WwreBVpregN6c&libraries=places&v=3.31"></script>
@@ -115,7 +110,7 @@
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-primary">
+                            <button class="btn btn-primary" data-bs-toggle="dropdown">
                                 Languages
                             </button>
 
@@ -163,9 +158,7 @@
                             <li class="dropdown-item"><a
                                     href="/become-tech-hunter">
                                     <i class="fa fa-user-circle"
-                                        aria-hidden="true"></i> Become
-                                    a
-                                    Tech Hunter Pro
+                                        aria-hidden="true"></i> Become a Tech Hunter Pro
                                 </a>
                             </li>
                             <li class="dropdown-item"> <a
@@ -258,96 +251,124 @@
       <div class="col-md-12">
 
         <ul class="tech-hunter-menu">
-          <li class="mega-drop-down"><a href="#">
-              Network Technology</a>
+          <li class="mega-drop-down"><a href="#" class="active">
+              Network Technology <i class="fa fa-caret-down"></i></a>
             <div class="animated fadeIn mega-menu">
               <div class="mega-menu-wrap">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h4 class="row mega-title">Feature</h4>
-                    <img class="img-responsive"
-                      src="https://3.bp.blogspot.com/-rUk36pd-LbM/VcLb48X4f-I/AAAAAAAAGCI/Y_UxBAgEqwA/s1600/Magento_themes.jpg">
-                  </div>
-                  <div class="col-md-2">
-                    <h4 class="row mega-title">Standers</h4>
-                    <ul class="stander">
-                      <li><a href="#">Mobile</a></li>
-                      <li><a href="#">Computer</a></li>
-                      <li><a href="#">Watch</a></li>
-                      <li><a href="#">laptop</a></li>
-                      <li><a href="#">Camera</a></li>
-                      <li><a href="#">I pad</a></li>
-                      <li><a class="view-more btn- btn-sm" href="#">View more</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4 class="row mega-title">Description</h4>
-                    <ul class="description">
-                      <li><a href="#">Women</a>
-                        <span>Description of Women</span>
-                      </li>
-                      <li><a href="#">Men</a>
-                        <span>Description of men Cloths</span>
-                      </li>
-                      <li><a href="#">Kids</a>
-                        <span>Description of Kids Cloths</span>
-                      </li>
-                      <li><a href="#">Others</a>
-                        <span>Description of Others Cloths</span>
-                      </li>
-                      <li>
-                        <a class="view-more btn btn-sm" href="#">View more</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4 class="row mega-title">Icon + Description</h4>
-                    <ul class="icon-des">
-                      <li><a href="#"><i class="fa fa-globe"></i>Web</a></li>
-                      <li><a href="#"><i class="fa fa-mobile"></i>Mobile</a></li>
-                      <li><a href="#"><i class="fa fa-arrows-h"></i>Responsive</a></li>
-                      <li><a href="#"><i class="fa fa-desktop"></i>Desktop</a></li>
-                      <li><a href="#"><i class="fa fa-paint-brush"></i>UI/UX</a></li>
-                    </ul>
-                  </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">PC Repair</a></li>
+                        <li> <a href="#">Printer Repair</a></li>
+                        <li> <a href="#"> Servers Repair</a></li>
+                        <li> <a href="#"> Routers & Switchers Repair</a></li>
+                        <li> <a href="#">Corporate-LANs/WANs troubleshooting</a></li>
+                        <li> <a href="#"> Computer hardware/software
+                            troubleshooting</a></li>
+                        <li> <a href="#"> Network Security implementation</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">Secure data communications</a></li>
+                        <li> <a href="#">Secure voice communications</a></li>
+                        <li> <a href="#"> VPN</a></li>
+                        <li> <a href="#"> Date recovery</a></li>
+                        <li> <a href="#"> Remote IT Support</a></li>
+                        <li> <a href="#"> Surveillance</a></li>
+                        <li> <a href="#"> Mobile phone repair</a></li>
+                        <li> <a href="#">Staff training</a></li>
 
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">Secure data communications</a></li>
+                        <li> <a href="#">Secure voice communications</a></li>
+                        <li> <a href="#"> VPN</a></li>
+                        <li> <a href="#"> Date recovery</a></li>
+                        <li> <a href="#"> Remote IT Support</a></li>
+                        <li> <a href="#"> Surveillance</a></li>
+                        <li> <a href="#"> Mobile phone repair</a></li>
+                        <li> <a href="#">Staff training</a></li>
+
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">Secure data communications</a></li>
+                        <li> <a href="#">Secure voice communications</a></li>
+                        <li> <a href="#"> VPN</a></li>
+                        <li> <a href="#"> Date recovery</a></li>
+                        <li> <a href="#"> Remote IT Support</a></li>
+                        <li> <a href="#"> Surveillance</a></li>
+                        <li> <a href="#"> Mobile phone repair</a></li>
+                        <li> <a href="#">Staff training</a></li>
+
+                      </ul>
+                    </div>
+
+                  </div>
                 </div>
               </div>
+            </div>
+          </li>
+          <li><a href="#"> Tech Support</a></li>
+          <li><a href="#"> Remote Services  </a></li>
+          <li class="mega-drop-down">
+            <a href="#"> Repair & Services <i class="fa fa-caret-down"></i> </a>
+            <div class="animated fadeIn mega-menu">
+              <div class="mega-menu-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">PC Repair</a></li>
+                        <li> <a href="#">Printer Repair</a></li>
+                        <li> <a href="#"> Servers Repair</a></li>
+                        <li> <a href="#"> Routers & Switchers Repair</a></li>
+                        <li> <a href="#">Corporate-LANs/WANs troubleshooting</a></li>
+                        <li> <a href="#"> Computer hardware/software
+                            troubleshooting</a></li>
+                        <li> <a href="#"> Network Security implementation</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <ul class="sub-menu-list">
+                        <li> <a href="#">Secure data communications</a></li>
+                        <li> <a href="#">Secure voice communications</a></li>
+                        <li> <a href="#"> VPN</a></li>
+                        <li> <a href="#"> Date recovery</a></li>
+                        <li> <a href="#"> Remote IT Support</a></li>
+                        <li> <a href="#"> Surveillance</a></li>
+                        <li> <a href="#"> Mobile phone repair</a></li>
+                        <li> <a href="#">Staff training</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="menu-ad">
+                        <img src="../public/images/menu-ad.jpg" />
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
-            </div>
+            </div></li>
+          <li><a href="#">Development</a></li>
+          <li>
+            <a href="#">
+              Network & Security
+            </a>
           </li>
-          <li><a class="active" href="#"><i class="fa fa-home"></i> Home</a></li>
-          <li class="drop-down"><a href="#"><i class="fa fa-cogs"></i> Flyout</a>
-            <!--Drop Down-->
-            <ul class="drop-down-ul animated fadeIn">
-              <li class="flyout-right"><a href="#">Flyout Right</a><!--Flyout Right-->
-                <ul class="animated fadeIn">
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Computer</a></li>
-                  <li><a href="#">Watch</a></li>
-                </ul>
-              </li>
 
-              <li class="flyout-left"><a href="#">Flyout Left</a><!--Flyout Left-->
-                <ul class="animated fadeIn">
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Computer</a></li>
-                  <li><a href="#">Watch</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">No Flyout</a></li>
-
-            </ul>
-            <!--//End drop down-->
-          </li>
-          <li><a href="#"><i class="fa fa-cogs"></i> Services</a></li>
-          <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i> Contact</a>
-            <div class="contact">
-
-            </div>
+          <li class="">
+            <a href="#" class="show-promotions">
+              Show Promotions <span class="badge badge-danger">12</span>
+            </a>
           </li>
 
         </ul>
@@ -1066,9 +1087,9 @@
                         Sign up for our latest news & articles. We
                         won’t give you spam mails.
                     </p>
-                    <div class="form-group">
-                        <input type="email" required/>
-                        <button variant="primary" @click="subscribe">
+                    <div class="form-group d-flex">
+                        <input type="email" class="form-control" required/>
+                        <button class="btn btn-secondary">
                             <i class="fa fa-envelope"></i>
                             Email
                         </button>

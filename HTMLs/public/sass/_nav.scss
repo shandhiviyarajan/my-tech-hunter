@@ -1,6 +1,6 @@
 nav#tech-hunter-menu-wrapper {
-    background: $primary;
-    position:relative;
+  background: $primary;
+  position: relative;
   ul li {
     list-style: none;
   }
@@ -13,19 +13,44 @@ nav#tech-hunter-menu-wrapper {
   width: 100%;
   list-style: none;
   background: $primary;
-  margin:0px;
+  margin: 0px;
+  text-align: center;
+
+  li {
+    a.show-promotions {
+      background: $success;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 12px;
+      height: 32px;
+      padding: 7px 24px;
+      position: relative;
+
+      span.badge.badge-danger {
+        color: #fff;
+        background: #ff0000;
+        border-radius: 24px;
+        padding: 6px;
+        position: absolute;
+        top: -9px;
+      }
+      &:hover {
+        background: $success;
+      }
+    }
+  }
 
   > li {
     display: inline-block;
-    margin-left:-4px;
+    margin-left: -4px;
 
     > a {
       color: #fff;
       text-decoration: none;
-      text-transform: uppercase;
+      text-align: left;
       border: none;
-      font-weight:bold;
-      font-size:14px;
+      font-weight: 600;
+      font-size: 13px;
       -webkit-transition: color 0.2s linear, background 0.2s linear;
       -moz-transition: color 0.2s linear, background 0.2s linear;
       -o-transition: color 0.2s linear, background 0.2s linear;
@@ -40,12 +65,21 @@ li.drop-down ul > li > a:hover {
   background: $primary_hover;
   color: #fff;
 }
-.tech-hunter-menu i {
-  float: left;
-  font-size: 18px;
-  margin-right: 6px;
-  line-height: 20px !important;
+.tech-hunter-menu a {
+  i {
+    float: right;
+    font-size: 20px;
+    margin-left: 6px;
+    line-height: 20px !important;
+  }
+
+  &:hover {
+    i {
+      transform: rotate(180deg);
+    }
+  }
 }
+
 li.drop-down,
 .flyout-right,
 .flyout-left {
@@ -85,13 +119,12 @@ li.drop-down > ul > li > a,
   padding: 12px 24px;
   text-decoration: none;
   background-color: $primary;
- border:none;
+  border: none;
   -webkit-transition: color 0.2s linear, background 0.2s linear;
   -moz-transition: color 0.2s linear, background 0.2s linear;
   -o-transition: color 0.2s linear, background 0.2s linear;
   transition: color 0.2s linear, background 0.2s linear;
 }
-
 
 /*Flyout Mega*/
 .flyout-mega-wrap {
@@ -131,40 +164,45 @@ h4.row.mega-title {
 .mega-menu {
   left: 0;
   right: 0;
-  padding:24px;
+  padding: 24px;
   display: none;
   padding-top: 0;
   min-height: 100%;
 }
-h4.row.mega-title {
-  color: #eee;
-  margin-top: 0px;
-  font-size: 14px;
-  padding-left: 15px;
-  padding-bottom: 13px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #547787;
-  padding-top: 15px;
-  background-color: #365670;
-}
+
 .mega-menu ul li a {
   line-height: 25px;
-  font-size: 90%;
   display: block;
 }
-ul.stander li a {
-  padding: 3px 0px;
+
+.mega-menu ul.sub-menu-list {
+  padding: 24px 0px 0px 0px;
+  margin: 0px;
+  text-align: left;
+  li {
+    list-style: none;
+    a {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: 0.3s ease;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
 }
 
-ul.description li {
-  padding-bottom: 12px;
-  line-height: 8px;
+.mega-menu .menu-ad {
+  padding: 24px 0px 0px 0px;
+  img {
+    width: 100%;
+  }
 }
 
-ul.description li span {
-  color: #ccc;
-  font-size: 85%;
-}
 a.view-more {
   border-radius: 1px;
   margin-top: 15px;
@@ -173,10 +211,7 @@ a.view-more {
   line-height: 21px !important;
   display: inline-block !important;
 }
-a.view-more:hover {
-  color: #fff;
-  background: #0dadef;
-}
+
 ul.icon-des li a i {
   color: #fff;
   width: 35px;
@@ -213,7 +248,7 @@ ul.icon-des li {
 .flyout-left ul > li > a,
 .flyout-mega-wrap,
 .mega-menu {
-  background-color: #547787;
+  background-color: $primary_hover;
 }
 
 /*hover*/
@@ -289,6 +324,6 @@ a.toggle-menu {
   padding: 20px;
   font-size: 27px;
   background-color: $primary;
-  color:#fff;
+  color: #fff;
   top: 0px;
 }

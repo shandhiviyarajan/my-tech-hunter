@@ -99,10 +99,7 @@
         .package-header {
           background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
           border-radius: 24px 24px 0 0;
-
-
         }
-
         a.btn {
           background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
         }
@@ -112,19 +109,21 @@
         .package-header {
           background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
           border-radius: 24px 24px 0 0;
-
         }
-
         a.btn {
           background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
         }
       }
     }
   }
-
-
 }
 
 .tech_profile{
   margin:0 auto;
+}
+.home-video{
+  width:100%;
+  height:650px;
+  object-fit: cover;
+
 }
