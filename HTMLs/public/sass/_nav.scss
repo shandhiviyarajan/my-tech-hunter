@@ -5,6 +5,10 @@ nav#tech-hunter-menu-wrapper {
     list-style: none;
   }
 }
+
+.toggle-menu{
+  display:none;
+}
 .content {
   margin: 50px 100px 0px 100px;
 }
@@ -292,6 +296,9 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   }
 }
 @media (max-width: 767px) {
+  .toggle-menu{
+    display:block;
+  }
   .tech-hunter-menu{
     padding: 0px 12px 24px 12px;
   }
