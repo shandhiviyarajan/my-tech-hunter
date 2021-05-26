@@ -1,0 +1,119 @@
+.search-results-count {
+  .results-count {
+    color: $gray-100;
+    font-size: 14px;
+    font-weight: 500;
+    span {
+      color: $link-color;
+      font-weight: bold;
+    }
+  }
+
+  .results-keyword {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+.search-filter-dropdown {
+  margin-right: 12px;
+  button {
+    width: 160px;
+    outline: 0;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #ffffff;
+    &:focus,
+    &:active,
+    &:active:focus {
+      outline: 0;
+      background: #ffffff;
+      border:none;
+      box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover{
+        color:$primary;
+        background:#fff;
+    }
+    
+
+    &:after {
+      display: none;
+    }
+  }
+  ul.dropdown-menu {
+      transform: none !important;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    margin-top: -8px !important;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+    right: 0px !important;
+    left: auto !important;
+    top: 42px !important;
+    border:none;
+    width:100%;
+
+    li {
+      background: #fff;
+      font-weight: normal;
+      text-decoration: none;
+      font-size:14px;
+      cursor:pointer;
+      &:hover {
+        color: $primary;
+      }
+
+      a {
+        font-weight: normal;
+        color:$gray-300;
+        display: block;
+        font-size:14px;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.search-filter-dropdown.small-version{
+    button{
+        width:auto;
+    }
+}
+
+
+.pagination{
+    .page-item{
+        .page-link{
+            color:#000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight:normal;
+       height:44px;
+       padding:0px 16px;
+       line-height:44px;
+            margin: 0px 6px;
+            border: none;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+
+            &:hover{
+                background:$primary;
+                color:#fff;
+            }
+            &:active{
+                background:$primary;
+                color:#fff;
+            }
+
+        }
+    }
+}

@@ -16,10 +16,11 @@ $font_secondary : 'Merriweather', serif;
 $gray:#666;
 $gray-100:#999;
 $gray-300:#888;
+$link-color:rgb(0, 94, 255);
 .bg-transparent {
   background: none !important;
 }
-$link-color:rgb(0, 94, 255);
+
 
 .bg-warning {
   background-color: $orange_light !important;
@@ -36,4 +37,30 @@ $link-color:rgb(0, 94, 255);
 }
 .text-primary{
   color:$primary !important;
+}
+.text-yellow{
+  
+}
+
+.pl-4{
+  padding-left:$gutters/2 !important;
+}
+.py-4{
+  padding-top:$gutters/2  !important;
+  padding-bottom:$gutters/2 !important;
+}
+
+.ml-4{
+  margin-left:$gutters/2 !important;
+}
+
+.mr-4{
+  margin-right:$gutters/2 !important;
+}
+
+.mr-2{
+  margin-right:$gutters/3 !important;
+}
+.ml-2{
+  margin-left:$gutters/3 !important;
 }

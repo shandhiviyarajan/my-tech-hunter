@@ -28,7 +28,7 @@
 }
 
 .btn {
-  border-radius: 24px;
+  border-radius: 6px;
   &.btn-fb,
   &.btn-linked-in,
   &.btn-google,
@@ -40,7 +40,7 @@
     width: 100%;
 
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+    border-radius: 6px;
 
     i.fa,
     svg {
@@ -81,6 +81,10 @@
     border: thin solid $primary;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
   }
+}
+
+textarea.form-control{
+  min-height:160px;
 }
 
 .form-title {

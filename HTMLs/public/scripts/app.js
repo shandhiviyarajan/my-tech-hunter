@@ -425,30 +425,30 @@
 
                 var map_style = [
                     {
-                      "elementType": "labels",
-                      "stylers": [
-                        {
-                          "visibility": "off"
-                        }
-                      ]
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
                     },
                     {
-                      "featureType": "administrative.land_parcel",
-                      "stylers": [
-                        {
-                          "visibility": "off"
-                        }
-                      ]
+                        "featureType": "administrative.land_parcel",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
                     },
                     {
-                      "featureType": "administrative.neighborhood",
-                      "stylers": [
-                        {
-                          "visibility": "off"
-                        }
-                      ]
+                        "featureType": "administrative.neighborhood",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
                     }
-                  ];
+                ];
                 const location = { lat: -25.344, lng: 131.036 };
                 // The map, centered at Uluru
                 const map = new google.maps.Map(document.getElementById("address-map"), {
@@ -460,11 +460,27 @@
                 // The marker, positioned at Uluru
                 const marker = new google.maps.Marker({
                     position: location,
-                   // icon:'../svg/mapMarker.svg',
+                    // icon:'../svg/mapMarker.svg',
                     map: map
                 });
 
 
+            }
+
+            function _show_hide_number() {
+                $("#show-hide-contact-number").on('click', function (e) {
+                    e.preventDefault();
+                    var show = true;
+
+                    if (show) {
+                        $(this).find(".contact-number").text("+1 009 8976 876");
+                        $(this).find("a").attr('href',"tel:+1 009 8976 876");
+                        show = false;
+                    } else {
+                        $(this).find(".contact-number").text("Show contact number");
+                        show = ture;
+                    }
+                })
             }
 
             return {
@@ -472,6 +488,7 @@
                     _single_page_gallery();
                     _selectStarRatings();
                     _address_map();
+                    _show_hide_number();
                 }
             }
 

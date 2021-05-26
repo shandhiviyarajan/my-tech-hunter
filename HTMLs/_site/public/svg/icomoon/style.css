@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?grfz58');
+  src:  url('fonts/icomoon.eot?grfz58#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?grfz58') format('truetype'),
+    url('fonts/icomoon.woff?grfz58') format('woff'),
+    url('fonts/icomoon.svg?grfz58#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-IconChat:before {
+  content: "\e904";
+}
+.icon-IconArrowDown:before {
+  content: "\e900";
+}
+.icon-IconBell:before {
+  content: "\e901";
+}
+.icon-IconBusiness:before {
+  content: "\e902";
+}
+.icon-IconCall:before {
+  content: "\e903";
+}
+.icon-IconCreateBusiness:before {
+  content: "\e905";
+}
+.icon-IconDashboard:before {
+  content: "\e906";
+}
+.icon-IconDelete:before {
+  content: "\e907";
+}
+.icon-IconEdit:before {
+  content: "\e908";
+}
+.icon-IconEnvelope:before {
+  content: "\e909";
+}
+.icon-IconFollowing:before {
+  content: "\e90a";
+}
+.icon-IconHeaderBell:before {
+  content: "\e90b";
+}
+.icon-IconHeart:before {
+  content: "\e90c";
+}
+.icon-IconLogout:before {
+  content: "\e90d";
+}
+.icon-IconMarker:before {
+  content: "\e90e";
+}
+.icon-IconMeeting:before {
+  content: "\e90f";
+}
+.icon-IconMessage:before {
+  content: "\e910";
+}
+.icon-IconPower:before {
+  content: "\e911";
+}
+.icon-IconProfileEnvelope:before {
+  content: "\e912";
+}
+.icon-IconProfileMessage:before {
+  content: "\e913";
+}
+.icon-IconProfileSettings:before {
+  content: "\e914";
+}
+.icon-IconPromotions:before {
+  content: "\e915";
+}
+.icon-IconQuotation:before {
+  content: "\e916";
+}
+.icon-IconRemote:before {
+  content: "\e917";
+}
+.icon-IconReviews:before {
+  content: "\e918";
+}
+.icon-IconSearch:before {
+  content: "\e919";
+}
+.icon-IconView:before {
+  content: "\e91a";
+}
+.icon-IconWeb:before {
+  content: "\e91b";
+}
