@@ -69,7 +69,7 @@
 </head>
 <body>
 <main>
-    <header style="background:url('../public/images/tiger-header.jpg') center center
+    <header class="site-header" style="background:url('../public/images/tiger-header.jpg') center center
     no-repeat; background-size:cover;">
     <section>
         <div class="top-header">
@@ -242,10 +242,11 @@
     </section>
     <!-- header navigation-->
     <section>
-        <nav id="tech-hunter-menu-wrapper">
-  <a href="#" class="toggle-menu visible-xs-block">
-    <i class="fa fa-bars"></i>
-  </a>
+        <a href="#" class="toggle-menu visible-xs-block">
+  <i class="fa fa-bars"></i>
+</a>
+<nav id="tech-hunter-menu-wrapper">
+
   <div class="container">
     <div class="row no-gutters">
       <div class="col-md-12">
@@ -399,8 +400,25 @@
                 <form accept="!#">
                   <div class="home-search-form">
                     <div class="form-group">
+                      <div class="dropdown location-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown">
+                          Choose Location
+                        </button>
+                        <div class="dropdown-menu p-4">
+                          <label>
+                            Search location
+                          </label>
+                          <input type="text" class="form-control"
+                            placeholder="Location" />
+                          <button type="button" class="btn btn-sm">
+                            Save
+                          </button>
+                        </div>
+                      </div>
                       <input required placeholder="eg Tech support Networking, Cyber security, App Development"
-                      id="home-search-autocomplete" class="form-control">
+                        id="home-search-autocomplete" class="form-control">
                       <button type="submit">
                         <span class="icon-IconSearch"></span> Search
                       </button>
@@ -465,17 +483,17 @@
             no-repeat; background-size:cover;"></div>
         </div>
         <div class="swiper-slide">
-          <div class="source"
+          <div class="source source-1"
             style="background:url('../public/images/slide-2.jpg') center center
             no-repeat; background-size:cover;"></div>
         </div>
         <div class="swiper-slide">
-          <div class="source"
+          <div class="source source-2"
             style="background:url('../public/images/slide-4.jpg') center center
             no-repeat; background-size:cover;"></div>
         </div>
         <div class="swiper-slide">
-          <div class="source"
+          <div class="source source-3"
             style="background:url('../public/images/slide-3.jpg') center center
             no-repeat; background-size:cover;"></div>
         </div>
@@ -515,90 +533,13 @@
                     Post name
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -626,90 +567,13 @@
                     Post name
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -737,90 +601,13 @@
                     Post name
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -848,90 +635,13 @@
                     Post name
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -959,90 +669,13 @@
                     Post name
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -1102,90 +735,13 @@
                     Computer, Laptop, Mobile Phone, Repairs, Sales and Service
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <div class="star-rating">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-mute"></i>
+                    </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -1217,90 +773,13 @@
                     Computer, Laptop, Mobile Phone, Repairs, Sales and Service
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                   <div class="star-rating">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-mute"></i>
+                  </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -1334,90 +813,13 @@
                     Computer, Laptop, Mobile Phone, Repairs, Sales and Service
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                   <div class="star-rating">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-mute"></i>
+                  </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -1450,90 +852,13 @@
                     Computer, Laptop, Mobile Phone, Repairs, Sales and Service
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                   <div class="star-rating">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-mute"></i>
+                  </div>
                   </div>
                 </a>
                 <div class="category-tags">
@@ -1565,90 +890,13 @@
                     Computer, Laptop, Mobile Phone, Repairs, Sales and Service
                   </div>
                   <div class="service_rating">
-                    <svg width="80px" height="14px" viewBox="0 0 80 14"
-                      version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Group Copy 14</title>
-                      <defs>
-                        <rect id="path-1" x="377" y="903" width="261"
-                          height="371" rx="12"></rect>
-                        <filter x="-7.5%" y="-4.4%" width="114.9%"
-                          height="110.5%" filterUnits="objectBoundingBox"
-                          id="filter-2">
-                          <feOffset dx="0" dy="3" in="SourceAlpha"
-                            result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="6"
-                            in="shadowOffsetOuter1"
-                            result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                            operator="out"
-                            result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-                            0 0 0.101617133 0" type="matrix"
-                            in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                        fill-rule="evenodd">
-                        <g id="Home" transform="translate(-402.000000,
-                          -1172.000000)">
-                          <g id="Rectangle-Copy-60">
-                            <use fill="black" fill-opacity="1"
-                              filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#EEEEEE" stroke-width="1"
-                              stroke-linejoin="square" fill="#FFFFFF"
-                              fill-rule="evenodd"
-                              x="377.5" y="903.5" width="260" height="370"
-                              rx="12"></rect>
-                          </g>
-                          <g id="Group-Copy-14" transform="translate(402.000000,
-                            1172.000000)" fill-rule="nonzero">
-                            <g id="148841" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy" transform="translate(17.000000,
-                              0.000000)" fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-2"
-                              transform="translate(33.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-3"
-                              transform="translate(48.000000, 0.000000)"
-                              fill="#EFCE4A">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                            <g id="148841-copy-4"
-                              transform="translate(65.000000, 0.000000)"
-                              fill="#ACACAC">
-                              <polygon id="Path"
-                                points="7.50013923 0 9.81751351 4.60845972 15
-                                5.3476606 11.2499304 8.93462942 12.1351662 14
-                                7.50013923 11.6085964 2.86483376 14 3.75006962
-                                8.93462942 0 5.3476606 5.18248649 4.60845972"></polygon>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                   <div class="star-rating">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-mute"></i>
+                  </div>
                   </div>
                 </a>
                 <div class="category-tags">

@@ -16,7 +16,7 @@
           content="" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" type="image/png" href="../public/favicon.png" />
+    <link rel="icon" type="image/png" href="public/favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,7 +42,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
                <!-- custom-css -->
-      <link rel="stylesheet" href="../public/css/app.css" />
+      <link rel="stylesheet" href="public/css/app.css" />
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
@@ -57,7 +57,7 @@
           <!--swiperjs-->
           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-          <script type="text/javascript" src="../public/libs/pace/pace.min.js" defer></script>
+          <script type="text/javascript" src="public/libs/pace/pace.min.js" defer></script>
    
           <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -96,7 +96,7 @@
                         &nbsp;
                     </li>
 
-                    
+
                     <li>
                         <a href="#">
                             Advertisements
@@ -110,7 +110,8 @@
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-primary" data-bs-toggle="dropdown">
+                            <button class="btn btn-primary"
+                                data-bs-toggle="dropdown">
                                 Languages
                             </button>
 
@@ -132,7 +133,7 @@
                 <div class="col-md-4">
                     <a href="/" id="logo">
                         <img style="width:100%;"
-                            src="../public/images/logo-white.png" />
+                            src="public/images/logo-white.png" />
                     </a>
                 </div>
                 <div class="col-md-8 py-4 d-flex justify-content-end
@@ -158,7 +159,8 @@
                             <li class="dropdown-item"><a
                                     href="/become-tech-hunter">
                                     <i class="fa fa-user-circle"
-                                        aria-hidden="true"></i> Become a Tech Hunter Pro
+                                        aria-hidden="true"></i> Become a Tech
+                                    Hunter Pro
                                 </a>
                             </li>
                             <li class="dropdown-item"> <a
@@ -186,51 +188,73 @@
 
                     <div class="dropdown profile-dropdown">
                         <button class="btn btn-secondary dropdown-toggle"
-                            data-toggle="dropdown" type="button">
-                            <i class="fa fa-user"></i>
-                            Login
+                            data-bs-toggle="dropdown" type="button">
+                            <img src="public/images/profile.png"
+                                width="30" />
+                            Account
+                            <span class="icon-IconArrowDown"></span>
                         </button>
                         <div class="dropdown-menu">
-                            <div class="dropdown-item">
-                                <form>
-                                    <p>
-                                        <strong>
-                                            User Registration
-                                        </strong>
-                                    </p>
-                                    <div class="form-group"
-                                        label-for="dropdown-form-email"
-                                        @submit.stop.prevent>
-                                        <input
-                                            id="dropdown-form-email"
-                                            size="sm"
-                                            placeholder="email@example.com"
-                                            />
-                                    </div>
-                                    <div class="form-group"
-                                        label-for="dropdown-form-password">
-                                        <input
-                                            id="dropdown-form-password"
-                                            type="password"
-                                            size="sm"
-                                            placeholder="Password"
-                                            />
-                                    </div>
-                                    <label>
-                                        Remember me - <input type="checkbox"
-                                            class="mb-3" />
-                                    </label>
-                                    <div class="d-flex align-content-center">
-                                        <button class="btn-block btn
-                                            btn-primary">Login</button>
-                                    </div>
 
-                                </form>
-                            </div>
+                            <ul>
+                                <li>
+                                    <div class="logged-profile-info d-flex">
+                                        <img src="public/images/profile.png"
+                                            width="72" height="72" class="mr-2"/>
+                                        <div>
+                                            <p class="m-0">
+                                                <strong>Andrew Emiliya</strong>
+                                                <a href="#" class="p-0">
+                                                    andrewemilya@gmail.com
+                                                </a>
+                                            </p>
+                                            <div class="badge-member">
+                                                Hunter Member
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>
+                                        Give feedback improve MyTechHunter
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>Settings
+                                        & Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileMessage"></span>
+                                        Messages
+
+                                        <span class="badge badge-success bg-success">
+                                            03
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconLogout"></span>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
 
                     </div>
-                    <button class="btn btn-icon ml-4" v-if="isAuthenticated">
+                    <button class="btn btn-icon ml-4">
                         <i class="fa fa-bell-o"></i>
                         <span class="badge badge-danger">
                             03
@@ -351,7 +375,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="menu-ad">
-                        <img src="../public/images/menu-ad.jpg" />
+                        <img src="public/images/menu-ad.jpg" />
                       </div>
                     </div>
 
@@ -384,149 +408,129 @@
     
 
 
-    <div class="container auth-container">
-        <div class="row no-gutters justify-content-center">
-          <ul class="steps">
-            <li class="active">
-              Choose Subscription
-            </li>
+<div id="th-home-slider">
+  <div class="th-home-slider-search">
 
-            <li class="active">
-              Business Information
-            </li>
-            <li class="active">
-             Business Verifications
-            </li>
-            <li>
-              Payment confirmation
-            </li>
+    <div class="container">
+      <div class="row" no-gutters class="justify-content-center">
+        <div class="col-lg-12">
+          <div class="row no-gutters justify-content-center">
+            <div class="col-md-11 position-relative">
+              <div class="text">
+                <h3>
+                  What's your tech need? <br>
+                  Hunt it down and get it done!
+                </h3>
+                <form accept="!#">
+                  <div class="home-search-form">
+                    <div class="form-group">
+                      <div class="dropdown location-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown">
+                          Choose Location
+                        </button>
+                        <div class="dropdown-menu p-4">
+                          <label>
+                            Search location
+                          </label>
+                          <input type="text" class="form-control"
+                            placeholder="Location" />
+                          <button type="button" class="btn btn-sm">
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                      <input required placeholder="eg Tech support Networking, Cyber security, App Development"
+                        id="home-search-autocomplete" class="form-control">
+                      <button type="submit">
+                        <span class="icon-IconSearch"></span> Search
+                      </button>
+                    </div>
 
-            <li>
-              SMS Verification & Email Activation
-            </li>
-
-          </ul>
-          <div class="col-md-9">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="auth-page-title">
-                  <h1>
-                    Business Evidence <br>
-                    and Registration documents
-                  </h1>
-
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-8 pr-5">
-                <div class="form-title">
-                  Please fill the above documents.
-                </div>
-                <form>
-                  <input type="email" required placeholder="Business Registration Number	"/>
-                  <input type="text" required placeholder="Zip code"/>
-                  <input type="text" required placeholder="Type of Business "/>
-                  <div class="alert alert-info">
-                    <p>
-                      <small>
-                        Eg : (Network firm, Computer services, Repair Services, Freelancer, IT Shop)
-                      </small>
-                    </p>
                   </div>
-
-
                 </form>
-              </div>
-              <div class="col-md-4 pl-4">
-
-                <div class="form-title">
-                  &nbsp;
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <form>
-                <div class="col-md-11">
-                  <div class="my-4 d-flex justify-content-between">
-                    <label>
-                      <strong>
-                        Documents (PDF, JPG, Docx)
-                      </strong>
-                    </label>
-
-                    <p class="text-muted">
-                      <strong>
-                        For Verificaton
-                      </strong>
-                    </p>
-                  </div>
-
-                  <div>
-
-                    <svg width="889px" height="158px" viewBox="0 0 889 158" version="1.1"
-                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>Page 1</title>
-                      <defs>
-                        <rect id="path-1" x="291" y="634" width="869" height="138" rx="8"></rect>
-                        <filter x="-2.0%" y="-9.4%" width="103.9%" height="124.6%" filterUnits="objectBoundingBox"
-                                id="filter-2">
-                          <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-                          <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1"
-                                          result="shadowBlurOuter1"></feGaussianBlur>
-                          <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out"
-                                       result="shadowBlurOuter1"></feComposite>
-                          <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix"
-                                         in="shadowBlurOuter1"></feColorMatrix>
-                        </filter>
-                      </defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Create-Business-step-04-Copy" transform="translate(-281.000000, -628.000000)">
-                          <g id="Rectangle-Copy-13">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <rect stroke="#D6D6D6" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF"
-                                  fill-rule="evenodd" x="291.5" y="634.5" width="868" height="137" rx="8"></rect>
-                          </g>
-                          <g id="747416" opacity="0.168241279" transform="translate(694.000000, 660.000000)"
-                             fill="#000000" fill-rule="nonzero">
-                            <path
-                                d="M40.5625,27 L40.5625,38.8743719 C40.5625,39.8164623 39.7914687,40.5829146 38.84375,40.5829146 L5.15625,40.5829146 C4.20853125,40.5829146 3.4375,39.8164623 3.4375,38.8743719 L3.4375,27 L0,27 L0,38.8743719 C0,41.7006432 2.31309375,44 5.15625,44 L38.84375,44 C41.6869062,44 44,41.7006432 44,38.8743719 L44,27 L40.5625,27 Z"
-                                id="Path"></path>
-                            <polygon id="Path"
-                                     points="22.5 0 12 10.5628148 14.3895433 12.9666533 20.8103215 6.50746361 20.8103215 33 24.1896785 33 24.1896785 6.50746361 30.6104567 12.9666533 33 10.5628148"></polygon>
-                          </g>
-                          <text id="Upload-Registration" font-family="Inter-Regular_SemiBold, Inter" font-size="16"
-                                font-weight="500" fill="#705858" fill-opacity="0.31288243">
-                            <tspan x="621" y="733">Upload Registration Copy</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </svg>
-
-                  </div>
-                  <button class="btn my-4 btn-primary" href="/verify-code">
-                    Proceed to Payments
-                  </button>
-
-                  <p class="text-danger">
-                    <strong>
-                      We assure that none of your uploaded Business documents will not publish online.
-                    </strong>
+                <p>
+                  Get help, get support, bring your ideas to life with
+                  professional services
+                </p>
+                <div class="search-tags">
+                  <p>
+                    Most popular
                   </p>
+                  <ul>
+                    <li>
+                      <a href="/">
+                        Repair
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Tech Support
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Troubleshooting
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Remote Support
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </form>
-
+              </div>
             </div>
           </div>
+
         </div>
-
+      </div>
     </div>
-
+    <div class="swiper-container" id="home_slides">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="source">
+            <video autoplay class="home-video"
+              src="public/videos/video-home.mp4"></video>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source"
+            style="background:url('../public/images/tiger.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-1"
+            style="background:url('../public/images/slide-2.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-2"
+            style="background:url('../public/images/slide-4.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-3"
+            style="background:url('../public/images/slide-3.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
  
+
+
+
 
     <footer>
     <div class="container">
@@ -847,7 +851,7 @@
                 </div>
             </footer>
 
-    <script src="../public/scripts/app.js" defer></script>
+    <script src="public/scripts/app.js" defer></script>
 </main>
 
 </body>

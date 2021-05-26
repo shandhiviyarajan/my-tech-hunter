@@ -25,7 +25,7 @@
                         &nbsp;
                     </li>
 
-                    
+
                     <li>
                         <a href="#">
                             Advertisements
@@ -39,7 +39,8 @@
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-primary" data-bs-toggle="dropdown">
+                            <button class="btn btn-primary"
+                                data-bs-toggle="dropdown">
                                 Languages
                             </button>
 
@@ -87,7 +88,8 @@
                             <li class="dropdown-item"><a
                                     href="/become-tech-hunter">
                                     <i class="fa fa-user-circle"
-                                        aria-hidden="true"></i> Become a Tech Hunter Pro
+                                        aria-hidden="true"></i> Become a Tech
+                                    Hunter Pro
                                 </a>
                             </li>
                             <li class="dropdown-item"> <a
@@ -115,51 +117,73 @@
 
                     <div class="dropdown profile-dropdown">
                         <button class="btn btn-secondary dropdown-toggle"
-                            data-toggle="dropdown" type="button">
-                            <i class="fa fa-user"></i>
-                            Login
+                            data-bs-toggle="dropdown" type="button">
+                            <img src="{{assets}}images/profile.png"
+                                width="30" />
+                            Account
+                            <span class="icon-IconArrowDown"></span>
                         </button>
                         <div class="dropdown-menu">
-                            <div class="dropdown-item">
-                                <form>
-                                    <p>
-                                        <strong>
-                                            User Registration
-                                        </strong>
-                                    </p>
-                                    <div class="form-group"
-                                        label-for="dropdown-form-email"
-                                        @submit.stop.prevent>
-                                        <input
-                                            id="dropdown-form-email"
-                                            size="sm"
-                                            placeholder="email@example.com"
-                                            />
-                                    </div>
-                                    <div class="form-group"
-                                        label-for="dropdown-form-password">
-                                        <input
-                                            id="dropdown-form-password"
-                                            type="password"
-                                            size="sm"
-                                            placeholder="Password"
-                                            />
-                                    </div>
-                                    <label>
-                                        Remember me - <input type="checkbox"
-                                            class="mb-3" />
-                                    </label>
-                                    <div class="d-flex align-content-center">
-                                        <button class="btn-block btn
-                                            btn-primary">Login</button>
-                                    </div>
 
-                                </form>
-                            </div>
+                            <ul>
+                                <li>
+                                    <div class="logged-profile-info d-flex">
+                                        <img src="{{assets}}images/profile.png"
+                                            width="72" height="72" class="mr-2"/>
+                                        <div>
+                                            <p class="m-0">
+                                                <strong>Andrew Emiliya</strong>
+                                                <a href="#" class="p-0">
+                                                    andrewemilya@gmail.com
+                                                </a>
+                                            </p>
+                                            <div class="badge-member">
+                                                Hunter Member
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>
+                                        Give feedback improve MyTechHunter
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>Settings
+                                        & Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileMessage"></span>
+                                        Messages
+
+                                        <span class="badge badge-success bg-success">
+                                            03
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconLogout"></span>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
 
                     </div>
-                    <button class="btn btn-icon ml-4" v-if="isAuthenticated">
+                    <button class="btn btn-icon ml-4">
                         <i class="fa fa-bell-o"></i>
                         <span class="badge badge-danger">
                             03

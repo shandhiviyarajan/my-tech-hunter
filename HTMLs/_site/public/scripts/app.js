@@ -22,11 +22,11 @@
         function Header() {
 
             function _navigation() {
-                $(function () {
+             
                     $('.toggle-menu').click(function () {
-                        $('.tech-hunter-menu').toggleClass('display');
+                        $('.tech-hunter-menu, #tech-hunter-menu-wrapper').toggleClass('display');
                     });
-                });
+            
             }
 
             return {
@@ -42,51 +42,61 @@
          */
         function Home() {
 
-            function _searchAutocomplete(){
-                $( function() {
+            function _searchAutocomplete() {
+                $(function () {
                     var projects = [
-                      {
-                        value: "jquery",
-                        label: "jQuery",
-                        desc: "the write less, do more, JavaScript library",
-                        icon: "jquery_32x32.png"
-                      },
-                      {
-                        value: "jquery-ui",
-                        label: "jQuery UI",
-                        desc: "the official user interface library for jQuery",
-                        icon: "jqueryui_32x32.png"
-                      },
-                      {
-                        value: "sizzlejs",
-                        label: "Sizzle JS",
-                        desc: "a pure-JavaScript CSS selector engine",
-                        icon: "sizzlejs_32x32.png"
-                      }
+                        {
+                            value: "Thunder Mac - Mac specialist & Repairs",
+                            label: "Thunder Mac",
+                            desc: "Mac specialist & Repairs",
+                            icon: "jquery_32x32.png",
+                            sponsored:true
+                        },
+                        {
+                            value: "BT Options",
+                            label: "BT Options",
+                            desc: "Apple dealer and Apple products repair",
+                            icon: "jqueryui_32x32.png",
+                            sponsored:"Sponsored"
+                        },
+                        {
+                            value: "Future World ",
+                            label: "Future World",
+                            desc: "Apple service center",
+                            icon: "sizzlejs_32x32.png"
+                        },
+                        {
+                            value: "Mac screen repairing",
+                            label: "Future World",
+                            desc: "Apple service center",
+                            icon: "sizzlejs_32x32.png"
+                        }, {
+                            value: 'Mac trouble shooting',
+                            label: "Future World",
+                            desc: "Apple service center",
+                            icon: "sizzlejs_32x32.png"
+                        }
                     ];
-                 
-                    $( "#home-search-autocomplete" ).autocomplete({
-                      minLength: 0,
-                      source: projects,
-                      focus: function( event, ui ) {
-                        $( "#home-search-autocomplete" ).val( ui.item.label );
-                        return false;
-                      },
-                      select: function( event, ui ) {
-                        $( "#project" ).val( ui.item.label );
-                        $( "#project-id" ).val( ui.item.value );
-                        $( "#project-description" ).html( ui.item.desc );
-                        $( "#project-icon" ).attr( "src", "images/" + ui.item.icon );
-                 
-                        return false;
-                      }
+
+                    $("#home-search-autocomplete").autocomplete({
+                        minLength: 0,
+                        source: projects,
+                        focus: function (event, ui) {
+                            $("#home-search-autocomplete").val(ui.item.label);
+                            return false;
+                        },
+                        select: function (event, ui) {
+                            $("#home-search-autocomplete").val(ui.item.label);
+
+                            return false;
+                        }
                     })
-                    .autocomplete( "instance" )._renderItem = function( ul, item ) {
-                      return $( "<li>" )
-                        .append( "<div>" + item.label + "<br>" + item.desc + "</div>" )
-                        .appendTo( ul );
-                    };
-                  } );
+                        .autocomplete("instance")._renderItem = function (ul, item) {
+                            return $("<li>")
+                                .append("<div class='serch-item'><div class='label-content'>" + item.label + "<span>"+item.desc+"</span></div><div class='sponsored'>"+ item.sponsored +"</div></div>")
+                                .appendTo(ul);
+                        };
+                });
             }
             function _home_customers() {
                 new Swiper('#home_customers', {
@@ -521,7 +531,7 @@
 
                     if (show) {
                         $(this).find(".contact-number").text("+1 009 8976 876");
-                        $(this).find("a").attr('href',"tel:+1 009 8976 876");
+                        $(this).find("a").attr('href', "tel:+1 009 8976 876");
                         show = false;
                     } else {
                         $(this).find(".contact-number").text("Show contact number");

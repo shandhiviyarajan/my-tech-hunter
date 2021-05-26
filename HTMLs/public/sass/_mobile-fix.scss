@@ -13,10 +13,13 @@
   }
   #th-home-slider {
 
-    .th-home-slider__item {
+    .th-home-slider-search{
       position: relative;
       height: 540px;
 
+      .home-search-form{
+        padding:0px 24px;
+      }
       div.text {
         top: 0px;
         min-width: auto;
@@ -57,22 +60,22 @@
     }
 
     .source {
-      background: url('/images/tiger_mobile.jpg') center center no-repeat !important;
+      background: url('../images/tiger_mobile.jpg') center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-1 {
-      background: url('/images/slide-2-mobile.jpg') center center no-repeat !important;
+      background: url('../images/slide-2-mobile.jpg') center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-2 {
-      background: url('/images/slide-3-mobile.jpg') center center no-repeat !important;
+      background: url('../images/slide-3-mobile.jpg') center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-3 {
-      background: url('/images/slide-4-mobile.jpg') center center no-repeat !important;
+      background: url('../images/slide-4-mobile.jpg') center center no-repeat !important;
       background-size: cover !important;
     }
   }
@@ -188,10 +191,11 @@
     img {
       max-width: 240px;
       width: 100%;
-      /* margin-top: 23px; */
+ 
       margin: 12px auto;
       text-align: center;
       display: block;
+      
     }
   }
   header {

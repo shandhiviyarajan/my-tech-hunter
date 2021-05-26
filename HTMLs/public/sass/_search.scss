@@ -151,41 +151,120 @@
 
 .home-search-form {
   position: relative;
-  z-index:2000;
+  z-index: 2000;
 
-  input.form-control{
-    margin:0px;
-    border-radius:6px 0px 0px 6px;
-    color:$primary_hover;
-border:none;
-    &:focus{
+  input.form-control {
+    margin: 0px;
+    border-radius: 6px 0px 0px 6px;
+    color: $primary_hover;
+    border: none;
+    &:focus {
       box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
-      border:none;
+      border: none;
     }
   }
 
-
-
   button[type="submit"] {
-    background:$primary;
-    border:none;
-    font-size:14px;
-    font-weight:500;
-    color:#fff;
-    border-radius:0px 6px 6px 0px;
-    width:180px;
+    background: $primary;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0px 6px 6px 0px;
+    width: 180px;
     font-weight: bold;
     font-size: 16px;
 
-    &:hover{
-      background:$primary_hover;
+    &:hover {
+      background: $primary_hover;
     }
-
   }
 }
 
+.location-dropdown {
+  div.dropdown-menu {
+    padding: 24px;
+    width: 380px;
 
-.ui-widget.ui-widget-content{
-  z-index:1000;
+    left: auto !important;
+    right: -8px !important;
+    border: none;
+    border-radius: 0px 0px 12px 12px;
+    label {
+      margin: 0px 0px 12px 0px;
+    }
+    input {
+      border: 1px solid $gray-100;
+      box-shadow: none;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      &:focus {
+        border: 1px solid $primary;
+      }
+    }
+
+    button {
+      background: $primary;
+      color: #fff;
+      padding: 0px 12px;
+      box-shadow: none;
+    }
+  }
+}
+
+.ui-widget.ui-widget-content {
+  z-index: 1000;
+  border: none;
+}
+
+#ui-id-1 {
   border:none;
+  border-radius:0px 0px 12px 12px;     border:none;
+  box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  li {
+    display: flex;
+    border: none;
+  
+    div.serch-item {
+      padding: 12px 12px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      border:none;
+
+      div.label-content {
+        font-weight: bold;
+        font-size: 16px;
+
+        display:flex;
+
+        span {
+          color: #999;
+          font-size: 16px;
+          font-weight: normal;
+          display: block;
+          margin-left: 12px;
+        }
+      }
+
+      div.sponsored {
+        font-size: 14px;
+        color: $orange;
+        font-weight: 600;
+      }
+
+      &.ui-state-active{
+        background:$primary;
+        border:none;
+
+      }
+    }
+  }
+
+  li.ui-menu-item {
+    &:hover {
+      background: #f1f1f1;
+    }
+  }
 }

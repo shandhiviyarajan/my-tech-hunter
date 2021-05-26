@@ -270,6 +270,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 /*responsive*/
 @media (min-width: 767px) {
+
   .tech-hunter-menu > li > a {
     display: block;
     padding: 12px 24px;
@@ -291,6 +292,9 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   }
 }
 @media (max-width: 767px) {
+  .tech-hunter-menu{
+    padding: 0px 12px 24px 12px;
+  }
   .tech-hunter-menu {
     min-height: 44px;
     background-color: $primary;
@@ -307,6 +311,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   .display.tech-hunter-menu > li > a {
     display: block;
     padding: 12px 24px;
+    
   }
 
   .mega-menu,
@@ -320,10 +325,12 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 a.toggle-menu {
   position: absolute;
-  right: 0px;
-  padding: 20px;
-  font-size: 27px;
-  background-color: $primary;
+width:44px;
+height:44px;
+font-size:18px;
   color: #fff;
-  top: 0px;
+  top: 10px;
+  left:6px;
+  text-align: center;
+  line-height: 44px;
 }
