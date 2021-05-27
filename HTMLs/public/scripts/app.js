@@ -22,11 +22,11 @@
         function Header() {
 
             function _navigation() {
-             
-                    $('.toggle-menu').click(function () {
-                        $('.tech-hunter-menu, #tech-hunter-menu-wrapper').toggleClass('display');
-                    });
-            
+
+                $('.toggle-menu').click(function () {
+                    $('.tech-hunter-menu, #tech-hunter-menu-wrapper').toggleClass('display');
+                });
+
             }
 
             return {
@@ -39,22 +39,22 @@
         function ContactPage() {
 
             function _contact_google_map() {
-             if($("#contact-google-map").length > 0){
-                const map = new google.maps.Map(document.getElementById("settings-google-map"), {
-                    zoom: 8,
-                    center: location,
-                    scaleControl: false,
-                    navigationControl: false,
-                });
-                // The marker, positioned at Uluru
-                const marker = new google.maps.Marker({
-                    position: location,
-               
-                 icon:'../svg/mapMarker.svg',
-                    map: map
-                });
-             }
-                  
+                if ($("#contact-google-map").length > 0) {
+                    const map = new google.maps.Map(document.getElementById("settings-google-map"), {
+                        zoom: 8,
+                        center: location,
+                        scaleControl: false,
+                        navigationControl: false,
+                    });
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                        position: location,
+
+                        icon: '../svg/mapMarker.svg',
+                        map: map
+                    });
+                }
+
             }
 
             return {
@@ -77,14 +77,14 @@
                             label: "Thunder Mac",
                             desc: "Mac specialist & Repairs",
                             icon: "jquery_32x32.png",
-                            sponsored:true
+                            sponsored: true
                         },
                         {
                             value: "BT Options",
                             label: "BT Options",
                             desc: "Apple dealer and Apple products repair",
                             icon: "jqueryui_32x32.png",
-                            sponsored:"Sponsored"
+                            sponsored: "Sponsored"
                         },
                         {
                             value: "Future World ",
@@ -105,7 +105,7 @@
                         }
                     ];
 
-                    if($("#home-search-autocomplete").length > 0){
+                    if ($("#home-search-autocomplete").length > 0) {
                         $("#home-search-autocomplete").autocomplete({
                             minLength: 0,
                             source: projects,
@@ -115,17 +115,17 @@
                             },
                             select: function (event, ui) {
                                 $("#home-search-autocomplete").val(ui.item.label);
-    
+
                                 return false;
                             }
                         })
                             .autocomplete("instance")._renderItem = function (ul, item) {
                                 return $("<li>")
-                                    .append("<div class='serch-item'><div class='label-content'>" + item.label + "<span>"+item.desc+"</span></div><div class='sponsored'>"+ item.sponsored +"</div></div>")
+                                    .append("<div class='serch-item'><div class='label-content'>" + item.label + "<span>" + item.desc + "</span></div><div class='sponsored'>" + item.sponsored + "</div></div>")
                                     .appendTo(ul);
                             };
                     }
-                   
+
                 });
             }
             function _home_customers() {
@@ -383,6 +383,16 @@
        */
         function UserProfile() {
 
+            function _CKEditor() {
+
+                if ($("#post-editor").length > 0) {
+                    ClassicEditor
+                        .create(document.querySelector('#post-editor'))
+                       
+                }
+
+            }
+
             function _initCharts() {
                 if (document.getElementById('sales-view')) {
                     var salesView = new Chart(
@@ -463,51 +473,51 @@
 
             }
 
-            function _settings_google_map(){
-               if($("#settings-google-map").length > 0){
-                const map = new google.maps.Map(document.getElementById("settings-google-map"), {
-                    zoom: 8,
-                    center: location,
-                    scaleControl: false,
-                    navigationControl: false,
-                });
-                // The marker, positioned at Uluru
-                const marker = new google.maps.Marker({
-                    position: location,
-                    drag:true,
-                 icon:'../svg/mapMarker.svg',
-                    map: map
-                });
+            function _settings_google_map() {
+                if ($("#settings-google-map").length > 0) {
+                    const map = new google.maps.Map(document.getElementById("settings-google-map"), {
+                        zoom: 8,
+                        center: location,
+                        scaleControl: false,
+                        navigationControl: false,
+                    });
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                        position: location,
+                        drag: true,
+                        icon: '../svg/mapMarker.svg',
+                        map: map
+                    });
 
-               }
+                }
             }
 
             //https://notifyjs.jpillora.com/
-            function _notify(){
-                $(".notify-warning").on('click',function(){
-                    $.notify("Warning Notification", "warning",{
-                        autoHide:false,
-                     
+            function _notify() {
+                $(".notify-warning").on('click', function () {
+                    $.notify("Warning Notification", "warning", {
+                        autoHide: false,
+
                     });
                 })
 
-                $(".notify-success").on('click',function(){
-                    $.notify("Success Notification", "success",{
-                        autoHide:false,
-                       
+                $(".notify-success").on('click', function () {
+                    $.notify("Success Notification", "success", {
+                        autoHide: false,
+
                     });
                 })
 
-                $(".notify-error").on('click',function(){
-                    $.notify("Error Notification", "error",{
-                        autoHide:false,
+                $(".notify-error").on('click', function () {
+                    $.notify("Error Notification", "error", {
+                        autoHide: false,
                     });
                 })
 
-                $(".notify-info").on('click',function(){
-                    $.notify("Info Notification", "info",{
-                        autoHide:false,
-                     
+                $(".notify-info").on('click', function () {
+                    $.notify("Info Notification", "info", {
+                        autoHide: false,
+
                     });
                 })
             }
@@ -519,6 +529,7 @@
                     _initCharts();
                     _notify();
                     _settings_google_map();
+                    _CKEditor();
                 }
             }
         }
@@ -605,8 +616,8 @@
                 ];
                 const location = { lat: -25.344, lng: 131.036 };
                 // The map, centered at Uluru
-                
-                if($("#address-map").lenth > 0){
+
+                if ($("#address-map").lenth > 0) {
                     const map = new google.maps.Map(document.getElementById("address-map"), {
                         zoom: 8,
                         center: location,
@@ -652,75 +663,75 @@
         }
 
 
-        function SearchMap(){
+        function SearchMap() {
 
             var markers = [
 
                 {
-                  name: 'RF Computer services',
-                  position: { lat: 39.7594, lng: -99.4340 },
-                  icon: '/current_location.png'
+                    name: 'RF Computer services',
+                    position: { lat: 39.7594, lng: -99.4340 },
+                    icon: '/current_location.png'
                 },
                 {
-                  name: 'RF Computer services',
-                  position: { lat: 37.7594, lng: -97.4340 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services',
+                    position: { lat: 37.7594, lng: -97.4340 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-2',
-                  position: { lat: 36.7594, lng: -96.0040 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-2',
+                    position: { lat: 36.7594, lng: -96.0040 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-3',
-                  position: { lat: 35.7594, lng: -95.1140 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-3',
+                    position: { lat: 35.7594, lng: -95.1140 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-4',
-                  position: { lat: 34.7594, lng: -91.2240 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-4',
+                    position: { lat: 34.7594, lng: -91.2240 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services',
-                  position: { lat: 37.7594, lng: -92.4340 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services',
+                    position: { lat: 37.7594, lng: -92.4340 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-2',
-                  position: { lat: 36.0094, lng: -98.0040 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-2',
+                    position: { lat: 36.0094, lng: -98.0040 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-3',
-                  position: { lat: 30.7594, lng: -93.1140 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-3',
+                    position: { lat: 30.7594, lng: -93.1140 }, icon: '/images/map_marker.png'
                 },
                 {
-                  name: 'RF Computer services-4',
-                  position: { lat: 34.7594, lng: -100.2240 }, icon: '/images/map_marker.png'
+                    name: 'RF Computer services-4',
+                    position: { lat: 34.7594, lng: -100.2240 }, icon: '/images/map_marker.png'
                 }
-              ]
+            ]
 
-           function _map_search(){
-               if($("#google-map-results").length > 0){
-                const map = new google.maps.Map(document.getElementById("google-map-results"), {
-                    zoom: 8,
-                    center: location,
-                    scaleControl: false,
-                    navigationControl: false,
-                });
-                // The marker, positioned at Uluru
-                markers.forEach(function(v,i){
-                    const marker = new google.maps.Marker({
-                        position: v.position,
-                        icon:'../svg/mapMarker.svg',
-                        map: map,
-                        label:{
-                            text:v.name
-                        }
+            function _map_search() {
+                if ($("#google-map-results").length > 0) {
+                    const map = new google.maps.Map(document.getElementById("google-map-results"), {
+                        zoom: 8,
+                        center: location,
+                        scaleControl: false,
+                        navigationControl: false,
                     });
-                })
-               }
+                    // The marker, positioned at Uluru
+                    markers.forEach(function (v, i) {
+                        const marker = new google.maps.Marker({
+                            position: v.position,
+                            icon: '../svg/mapMarker.svg',
+                            map: map,
+                            label: {
+                                text: v.name
+                            }
+                        });
+                    })
+                }
 
             }
 
             return {
-                init:function(){
-                   _map_search();
+                init: function () {
+                    _map_search();
                 }
             }
 

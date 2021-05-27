@@ -1910,6 +1910,10 @@ span.badge-danger {
   width: 100%;
 }
 
+#post-editor {
+  height: 300px;
+}
+
 .filter-card {
   border: none;
   border-radius: 12px;
