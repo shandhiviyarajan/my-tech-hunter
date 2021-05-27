@@ -2085,6 +2085,11 @@ span.badge-danger {
   float: left !important;
 }
 
+#contact-google-map {
+  height: 400px;
+  width: 100%;
+}
+
 .filter-card {
   border: none;
   border-radius: 12px;

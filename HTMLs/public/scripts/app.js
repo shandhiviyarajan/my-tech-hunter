@@ -36,6 +36,33 @@
             }
         }
 
+        function ContactPage() {
+
+            function _contact_google_map() {
+             if($("#contact-google-map").length > 0){
+                const map = new google.maps.Map(document.getElementById("settings-google-map"), {
+                    zoom: 8,
+                    center: location,
+                    scaleControl: false,
+                    navigationControl: false,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: location,
+               
+                 icon:'../svg/mapMarker.svg',
+                    map: map
+                });
+             }
+                  
+            }
+
+            return {
+                init: function () {
+                    _contact_google_map();
+                }
+            }
+        }
         /**
          * Hompage 
          * @returns 
@@ -715,6 +742,7 @@
                     new UserProfile().init();
                     new SinglePage().init();
                     new SearchMap().init();
+                    new ContactPage().init();
                 });
 
             }
