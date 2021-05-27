@@ -2,6 +2,21 @@
   body {
     padding-top: 64px;
   }
+  footer {
+    padding: 12px;
+  }
+  .form-subscription {
+    padding: 12px;
+    margin: 0px -24px;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    div.d-flex {
+      display: block;
+    }
+  }
   .home-search-form {
     .b-overlay > div {
       background: none !important;
@@ -12,13 +27,12 @@
     }
   }
   #th-home-slider {
-
-    .th-home-slider-search{
+    .th-home-slider-search {
       position: relative;
       height: 540px;
 
-      .home-search-form{
-        padding:0px 24px;
+      .home-search-form {
+        padding: 0px 24px;
       }
       div.text {
         top: 0px;
@@ -60,22 +74,22 @@
     }
 
     .source {
-      background: url('../images/tiger_mobile.jpg') center center no-repeat !important;
+      background: url("../images/tiger_mobile.jpg") center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-1 {
-      background: url('../images/slide-2-mobile.jpg') center center no-repeat !important;
+      background: url("../images/slide-2-mobile.jpg") center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-2 {
-      background: url('../images/slide-3-mobile.jpg') center center no-repeat !important;
+      background: url("../images/slide-3-mobile.jpg") center center no-repeat !important;
       background-size: cover !important;
     }
 
     .source-3 {
-      background: url('../images/slide-4-mobile.jpg') center center no-repeat !important;
+      background: url("../images/slide-4-mobile.jpg") center center no-repeat !important;
       background-size: cover !important;
     }
   }
@@ -98,7 +112,6 @@
     a {
       font-size: 10px;
       margin-bottom: 6px;
-
     }
   }
 
@@ -116,7 +129,6 @@
       background: none;
       color: #fff;
       border: none;
-
     }
 
     ul.navbar-nav {
@@ -161,20 +173,17 @@
     }
   }
 
-  .home_tech_profiles{
-    padding:0px;
+  .home_tech_profiles {
+    padding: 0px;
   }
   #recent_post,
   #home_categories,
   #th-home-promotions,
-  #recent_post_pro{
+  #recent_post_pro {
     .swiper-slide {
-
       width: 275px !important;
-
     }
   }
-
   #home_customers {
     .swiper-slide {
       width: 305px !important;
@@ -191,22 +200,25 @@
     img {
       max-width: 240px;
       width: 100%;
- 
+
       margin: 12px auto;
       text-align: center;
       display: block;
-      
     }
   }
   header {
     .profile-dropdown {
-
       margin: 0px !important;
 
       button.dropdown-toggle {
         background: none;
         color: #fff;
         box-shadow: none;
+        margin-top: 12px;
+    padding: 0px 12px;
+    i.fa{
+      font-size:18px;
+    }
 
         &:hover,
         &:focus {
@@ -214,6 +226,11 @@
           outline: 0;
           box-shadow: none;
         }
+      }
+
+      .dropdown-menu{
+        top:64px !important;
+
       }
 
       ul {
@@ -231,17 +248,19 @@
     display: flex !important;
     width: 100%;
     padding: 0px 12px;
-    height: 52px;
+    height: 48px;
 
     img.logo {
       width: 44px;
+      margin-top: 6px;
     }
 
+    
   }
 
   #th-information {
     ul li {
-      font-size: 14px
+      font-size: 14px;
     }
 
     h2 {
@@ -249,11 +268,11 @@
     }
 
     .col-md-7 > div {
-      padding: 24px 24px;
+      padding: 12px;
     }
 
     .right_image {
-      display: none
+      display: none;
     }
 
     .clip-mask {
@@ -262,16 +281,18 @@
   }
 
   .section-title {
-    padding: 12px 0px;
+    padding: 0px 0px 12px 0px;
 
     h2 {
-      font-size: 16px;
+      font-size: 24px;
     }
 
-    a{
-      position:relative;
+    a {
+      position: relative;
       display: block;
       text-align: center;
+      right: auto;
+      top: auto;
     }
   }
 
@@ -344,9 +365,7 @@
       background: none;
       width: 100%;
 
-
       img {
-
         width: 16px;
       }
     }
@@ -396,7 +415,6 @@
     ul li {
       a {
         font-size: 10px;
-
       }
     }
   }
@@ -419,7 +437,6 @@
         font-size: 24px;
       }
     }
-
 
     .business-views {
       display: none;
@@ -475,7 +492,6 @@
       }
 
       .price {
-
         margin: 0 auto;
       }
 
@@ -505,8 +521,6 @@
         .col-md-4,
         .col {
           > div {
-
-
           }
 
           a.btn {
@@ -517,31 +531,43 @@
         .col {
           > div.business-price-1 {
             .package-header {
-              background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+              background-image: linear-gradient(
+                142deg,
+                #ff6a6a 21%,
+                #c80000 100%
+              );
               border-radius: 24px 24px 0 0;
-
-
             }
 
             a.btn {
-              background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+              background-image: linear-gradient(
+                142deg,
+                #ff6a6a 21%,
+                #c80000 100%
+              );
             }
           }
 
           > div.business-price-2 {
             .package-header {
-              background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+              background-image: linear-gradient(
+                149deg,
+                #f53abf 9%,
+                #d5008a 100%
+              );
               border-radius: 24px 24px 0 0;
-
             }
 
             a.btn {
-              background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+              background-image: linear-gradient(
+                149deg,
+                #f53abf 9%,
+                #d5008a 100%
+              );
             }
           }
         }
       }
-
 
       .professional-package {
         ol {
@@ -614,9 +640,7 @@
     }
 
     .tabs .tab-content .tab-pane {
-
       padding: 12px 0px;
-
     }
 
     .tabs .nav.card-header-pills {
@@ -677,7 +701,6 @@
     display: none;
   }
 
-
   #all-promotions,
   #all-posts {
     .service_card {
@@ -685,17 +708,20 @@
       max-width: 375px;
     }
   }
+
   .service-card {
+    .category-tags a {
+      margin-right: 6px;
+    }
     &.service-ad {
       margin-bottom: 12px;
     }
   }
-  .service_card.tech_profile .service_image{
-    height:200px;
+  .service_card.tech_profile .service_image {
+    height: 200px;
   }
 
   #user_profile {
-
     .graph {
       width: 100%;
     }
@@ -734,17 +760,29 @@
   }
 
   #package_professional {
-
     > div {
       width: 1080px;
     }
   }
 
-  .preview-containers{
-    position:relative;
+  .preview-containers {
+    position: relative;
   }
-  .input-image-upload{
-    height:44px;
+  .input-image-upload {
+    height: 44px;
+  }
+
+  #home-price-component,
+  #price-component {
+    .tabs .nav.card-header-pills li:first-child a {
+      padding: 12px;
+    }
+  }
+
+  #home-price-component,
+  #price-component {
+    div.card.package-info .package-details button {
+      width: 100%;
+    }
   }
 }
-

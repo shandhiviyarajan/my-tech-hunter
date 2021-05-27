@@ -958,14 +958,14 @@ body {
 .swiper-container {
   padding: 24px 0px;
 }
-.swiper-pagination-bullets{
-  text-align:center;
+.swiper-pagination-bullets {
+  text-align: center;
 
-  .swiper-pagination-bullet{
-    width:12px;
-    height:12px;
-    background:$primary;
-    margin:0px 6px;
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: $primary;
+    margin: 12px 6px;
   }
 }
 //swiper next prev buttons
@@ -981,17 +981,17 @@ body {
   background: #fff;
   margin-top: -22px;
   color: $primary;
-  
-  &:hover{
-    background:#f1f1f1;
+
+  &:hover {
+    background: #f1f1f1;
   }
 
   i.fa {
     font-size: 28px;
   }
 
-  &.swiper-button-disabled{
-    opacity:.25;
+  &.swiper-button-disabled {
+    opacity: 0.25;
   }
 }
 
@@ -1062,7 +1062,6 @@ body {
     position: relative;
     font-size: 13px;
     margin-bottom: 6px;
-    margin-bottom: 16px;
     color: #000;
     text-decoration: none;
 
@@ -1102,10 +1101,9 @@ body {
       background: $primary;
       color: #fff;
       text-decoration: none;
-      margin-right: 12px;
+      margin-right: 6px;
       padding: 6px 12px;
       border-radius: 6px;
-
       &:hover {
         background-color: #ece6d9;
         color: $primary;
@@ -1390,8 +1388,6 @@ body {
     margin: 24px auto 24px auto;
   }
 }
-
-
 
 .clip-mask {
   position: relative;
@@ -1703,8 +1699,6 @@ button.become-a-member {
   padding: 0px 24px;
 }
 
-
-
 .addthis_inline_share_toolbox {
   position: relative;
 
@@ -1947,11 +1941,11 @@ span.badge-danger {
   float: left !important;
 }
 
-#contact-google-map{
-  height:400px;
-  width:100%;
+#contact-google-map {
+  height: 400px;
+  width: 100%;
 }
 
-#post-editor{
-  height:300px;
+#post-editor {
+  height: 300px;
 }

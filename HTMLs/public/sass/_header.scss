@@ -118,14 +118,11 @@ header.site-header {
   header.site-header {
     position: absolute;
     height: 64px;
-    background:#000!important;
     top:0px;
     left:0px;
     #logo {
-
-      img {
-        margin:16px auto 0px auto;
-      }
+      display:none;
+      
     }
   }
 
@@ -133,6 +130,8 @@ header.site-header {
     height:0px;
     overflow:hidden;
     margin-top: 16px;
+
+
 
     div.col-md-12{
       padding:0px;

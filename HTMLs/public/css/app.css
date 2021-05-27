@@ -240,12 +240,11 @@ header.site-header #logo img {
   header.site-header {
     position: absolute;
     height: 64px;
-    background: #000 !important;
     top: 0px;
     left: 0px;
   }
-  header.site-header #logo img {
-    margin: 16px auto 0px auto;
+  header.site-header #logo {
+    display: none;
   }
 
   nav#tech-hunter-menu-wrapper {
@@ -1090,10 +1089,10 @@ body {
   text-align: center;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: #856e48;
-  margin: 0px 6px;
+  margin: 12px 6px;
 }
 
 .btn_next,
@@ -1179,7 +1178,6 @@ body {
   position: relative;
   font-size: 13px;
   margin-bottom: 6px;
-  margin-bottom: 16px;
   color: #000;
   text-decoration: none;
 }
@@ -1214,7 +1212,7 @@ body {
   background: #856e48;
   color: #fff;
   text-decoration: none;
-  margin-right: 12px;
+  margin-right: 6px;
   padding: 6px 12px;
   border-radius: 6px;
 }
@@ -2440,6 +2438,14 @@ nav#tech-hunter-menu-wrapper ul li {
 
 .toggle-menu {
   display: none;
+  border: none;
+  background: transparent;
+  height: 64px;
+  line-height: 64px;
+  width: 44px;
+}
+.toggle-menu span {
+  color: #fff;
 }
 
 .content {
@@ -3942,6 +3948,21 @@ input[type=checkbox] {
     padding-top: 64px;
   }
 
+  footer {
+    padding: 12px;
+  }
+
+  .form-subscription {
+    padding: 12px;
+    margin: 0px -24px;
+  }
+  .form-subscription h2 {
+    font-size: 16px;
+  }
+  .form-subscription div.d-flex {
+    display: block;
+  }
+
   .home-search-form .b-overlay > div {
     background: none !important;
   }
@@ -4106,11 +4127,19 @@ input[type=checkbox] {
     background: none;
     color: #fff;
     box-shadow: none;
+    margin-top: 12px;
+    padding: 0px 12px;
+  }
+  header .profile-dropdown button.dropdown-toggle i.fa {
+    font-size: 18px;
   }
   header .profile-dropdown button.dropdown-toggle:hover, header .profile-dropdown button.dropdown-toggle:focus {
     background: none !important;
     outline: 0;
     box-shadow: none;
+  }
+  header .profile-dropdown .dropdown-menu {
+    top: 64px !important;
   }
   header .profile-dropdown ul {
     right: 0px;
@@ -4125,10 +4154,11 @@ input[type=checkbox] {
     display: flex !important;
     width: 100%;
     padding: 0px 12px;
-    height: 52px;
+    height: 48px;
   }
   .mobile-toggle img.logo {
     width: 44px;
+    margin-top: 6px;
   }
 
   #th-information ul li {
@@ -4138,7 +4168,7 @@ input[type=checkbox] {
     font-size: 24px;
   }
   #th-information .col-md-7 > div {
-    padding: 24px 24px;
+    padding: 12px;
   }
   #th-information .right_image {
     display: none;
@@ -4148,15 +4178,17 @@ input[type=checkbox] {
   }
 
   .section-title {
-    padding: 12px 0px;
+    padding: 0px 0px 12px 0px;
   }
   .section-title h2 {
-    font-size: 16px;
+    font-size: 24px;
   }
   .section-title a {
     position: relative;
     display: block;
     text-align: center;
+    right: auto;
+    top: auto;
   }
 
   .swiper-container {
@@ -4343,21 +4375,21 @@ input[type=checkbox] {
   }
   #home-price-component .home-package .col-lg-7 .col > div.business-price-1 .package-header,
 #home-price-component .home-package .col-lg-5 .col > div.business-price-1 .package-header {
-    background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+    background-image: linear-gradient(142deg, #ff6a6a 21%, #c80000 100%);
     border-radius: 24px 24px 0 0;
   }
   #home-price-component .home-package .col-lg-7 .col > div.business-price-1 a.btn,
 #home-price-component .home-package .col-lg-5 .col > div.business-price-1 a.btn {
-    background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+    background-image: linear-gradient(142deg, #ff6a6a 21%, #c80000 100%);
   }
   #home-price-component .home-package .col-lg-7 .col > div.business-price-2 .package-header,
 #home-price-component .home-package .col-lg-5 .col > div.business-price-2 .package-header {
-    background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+    background-image: linear-gradient(149deg, #f53abf 9%, #d5008a 100%);
     border-radius: 24px 24px 0 0;
   }
   #home-price-component .home-package .col-lg-7 .col > div.business-price-2 a.btn,
 #home-price-component .home-package .col-lg-5 .col > div.business-price-2 a.btn {
-    background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+    background-image: linear-gradient(149deg, #f53abf 9%, #d5008a 100%);
   }
   #home-price-component .home-package .professional-package ol {
     display: flex;
@@ -4472,6 +4504,9 @@ input[type=checkbox] {
     max-width: 375px;
   }
 
+  .service-card .category-tags a {
+    margin-right: 6px;
+  }
   .service-card.service-ad {
     margin-bottom: 12px;
   }
@@ -4519,6 +4554,16 @@ input[type=checkbox] {
 
   .input-image-upload {
     height: 44px;
+  }
+
+  #home-price-component .tabs .nav.card-header-pills li:first-child a,
+#price-component .tabs .nav.card-header-pills li:first-child a {
+    padding: 12px;
+  }
+
+  #home-price-component div.card.package-info .package-details button,
+#price-component div.card.package-info .package-details button {
+    width: 100%;
   }
 }
 
