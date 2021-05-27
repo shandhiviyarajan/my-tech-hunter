@@ -33,6 +33,7 @@
   background-color: $primary;
   border: none;
   color: #fff;
+  padding: 0px 24px;
 
   &:hover {
     background-color: #fff;
@@ -49,7 +50,7 @@
   background-color: #fff;
   color: #747474;
   border: none;
-
+  padding: 0px 24px;
   &:hover,
   &:active,
   &:focus {

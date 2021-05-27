@@ -1,4 +1,0 @@
----
-layout : default.html
-title : My Tech Hunter - HTML version
----
