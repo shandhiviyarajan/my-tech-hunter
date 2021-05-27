@@ -1699,186 +1699,6 @@ button.become-a-member {
   padding: 0px 24px;
 }
 
-#become-a-member header,
-#become-a-member .modal-footer {
-  display: none;
-}
-#become-a-member div.title {
-  background: url("/images/slide-4.jpg") center center no-repeat;
-  text-align: left;
-  font-weight: 800;
-  padding: 24px;
-  background-size: cover;
-  margin: -24px -24px;
-  position: relative;
-}
-#become-a-member div.title:after {
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-}
-#become-a-member div.title h2 {
-  z-index: 300;
-  position: relative;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-}
-#become-a-member div.title h2 span {
-  font-size: 14px;
-  display: block;
-  font-weight: 500;
-  margin: 12px 0px;
-}
-#become-a-member h4 {
-  margin-top: 48px;
-  color: #fff;
-}
-#become-a-member .modal-content {
-  border-radius: 24px;
-  background: none;
-}
-#become-a-member .modal-content ul {
-  padding: 0px;
-  margin: 0px;
-}
-#become-a-member .modal-content ul li {
-  list-style: none;
-  padding: 6px 0px;
-  color: #f1f1f1;
-}
-#become-a-member .modal-content ul li i.fa {
-  margin-right: 7px;
-  background: #0068FF;
-  color: #fff;
-  padding: 3px;
-  border-radius: 24px;
-}
-#become-a-member ul.monthly-annually {
-  margin: 24px 0px;
-  padding: 0px;
-  text-align: center;
-}
-#become-a-member ul.monthly-annually li {
-  list-style: none;
-  display: inline-block;
-  z-index: 100;
-  position: relative;
-  color: #856e48;
-  cursor: pointer;
-}
-#become-a-member ul.monthly-annually li a {
-  display: block;
-  border-radius: 24px;
-  border: 2px solid #856e48;
-  color: #856e48;
-  padding: 6px 24px;
-  background: #fff;
-}
-#become-a-member ul.monthly-annually li a.active a, #become-a-member ul.monthly-annually li:hover a {
-  background: #856e48;
-  color: #fff;
-}
-#become-a-member ul.monthly-annually li:last-child {
-  margin-left: -24px;
-}
-#become-a-member ul.monthly-annually li.active {
-  z-index: 200;
-}
-#become-a-member ul.monthly-annually li.active a {
-  background: #856e48;
-  color: #fff;
-}
-#become-a-member .modal-body {
-  padding: 24px;
-  background: #856e48;
-  border-radius: 24px;
-}
-#become-a-member div.card.package-info {
-  margin: 0 auto;
-  border: none;
-  background: none;
-  border-radius: 24px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1);
-  padding: 0px;
-  max-width: 360px;
-}
-#become-a-member div.card.package-info .card-body {
-  padding: 0px;
-}
-#become-a-member div.card.package-info .package-wrapper {
-  border-radius: 24px 24px 0px 0px;
-  background-image: linear-gradient(142deg, #ff6a6a 21%, #c80000 100%);
-  text-align: center;
-  padding: 24px 24px;
-}
-#become-a-member div.card.package-info .package-wrapper.bronze {
-  background: #26d38c;
-}
-#become-a-member div.card.package-info .package-wrapper.platinum {
-  background-image: linear-gradient(149deg, #f53abf 9%, #d5008a 100%);
-}
-#become-a-member div.card.package-info .package-wrapper.silver {
-  background: #856e48;
-}
-#become-a-member div.card.package-info .package-wrapper.gold {
-  background: #FFA638;
-}
-#become-a-member div.card.package-info .package-wrapper h3 {
-  font-size: 16px;
-  font-weight: 500;
-  text-align: Center;
-  color: #fff;
-}
-#become-a-member div.card.package-info .package-wrapper .package-price {
-  margin: 0px;
-  text-align: Center;
-  color: #fff;
-  font-family: "Merriweather", serif;
-}
-#become-a-member div.card.package-info .package-wrapper .package-price span {
-  color: #fff;
-  font-size: 48px;
-  font-weight: Bold;
-  text-align: Center;
-}
-#become-a-member div.card.package-info .package-details {
-  text-align: center;
-  border-radius: 0px 0px 24px 24px;
-  background: #fff;
-  padding: 0px 24px 24px 24px;
-}
-#become-a-member div.card.package-info .package-details button {
-  transition: 0.3s ease;
-  width: 80%;
-  margin: 16px auto;
-  box-shadow: none;
-  color: #fff;
-  background-image: linear-gradient(142deg, #ff6a6a 21%, #c80000 100%);
-}
-#become-a-member div.card.package-info .package-details ul {
-  margin: 0px;
-  padding: 0px 12px;
-}
-#become-a-member div.card.package-info .package-details ul li {
-  text-align: center;
-  list-style: none;
-  font-family: "Merriweather", serif;
-  padding: 6px 0px;
-  font-size: 16px;
-}
-#become-a-member div.card.package-info:hover .package-details button {
-  transform: scale(1.2);
-}
-
 .addthis_inline_share_toolbox {
   position: relative;
   z-index: 1000;
@@ -3325,13 +3145,53 @@ a.toggle-menu {
   border-radius: 12px;
 }
 .modal .modal-header {
+  border: none;
   padding: 24px;
+  display: block;
+  position: relative;
+}
+.modal .modal-header .btn-close {
+  top: 24px;
+  right: 24px;
+  position: absolute;
+}
+.modal .modal-header h5 {
+  line-height: 32px;
+}
+.modal .modal-header h5 span {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.modal .modal-header p {
+  color: #fff;
 }
 .modal .modal-body {
   padding: 24px;
 }
 .modal .modal-body form label {
   margin-bottom: 8px;
+}
+.modal .modal-body.become-member {
+  background: #856e48;
+}
+.modal .modal-body.become-member ul {
+  padding: 0px;
+  margin: 0px 0px 24px 0px;
+}
+.modal .modal-body.become-member ul li {
+  list-style: none;
+  padding: 6px 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.modal .modal-body.become-member ul li i.fa {
+  color: #fff;
+  margin-right: 12px;
 }
 .modal .modal-image {
   width: 100%;
@@ -3362,6 +3222,8 @@ a.toggle-menu {
   font-size: 16px;
   color: #fff;
   text-align: left;
+  line-height: 24px;
+  margin-top: 12px;
 }
 .modal .modal-image button {
   z-index: 12;
