@@ -384,411 +384,737 @@
     <!--close header navigation-->
 </header>
     
-
-<div class="container">
-  <div class="th-ad-top">
-    <img src="../public/images/ad_1.png" />
-  </div>
-
-
+<div class="container-fluid" id="user_profile">
   <div class="row">
-    <div class="col-md-3">
-      <div class="th-ad-left">
-        <img src="../public/images/ad_2.png" />
-      </div>
-      <div class="filter-wrapper">
+    <div class="col-lg-3 col-md-3 col-sm-4">
+      <!-- Modal -->
 
-        <div class="card filter-card bg-success promotions">
-          <div class="card-header">
-            Promotions
+
+<div class="modal fade" data-bs-backdrop="static" id="viewMeetingsModal"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/about-us.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    Send Meeting Confirmation
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>
+                        <span class="small text-muted d-block">
+                            Meeting Title
+                        </span>
+                        PC Remote Trouble Shooting
+                    </p>
+
+                    <p>
+                        <span class="small text-muted d-block">
+                            Start Date
+                        </span>
+                        31st May 2021
+                    </p>
+
+                    <p>
+                        <span class="small text-muted d-block">
+                            Start time
+                        </span>
+                        9:00 am
+                    </p>
+                    <p>
+                        <span class="small text-muted d-block">
+                            Meeting link
+                        </span>
+                        <a href="http://google-meet.com/790327xytfsdaf">
+                            http://google-meet.com/790327xytfsdaf
+                        </a>
+                    </p>
+
+                    <p>
+                        <span class="small text-muted d-block">
+                            Requested by
+                        </span>
+                        Adam Johns
+                    </p>
+
+
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+
+                <button class="btn btn-primary">
+                    Confirm invitation
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    Cancel invitation
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" data-bs-backdrop="static" id="viewNotificatinsModal"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/about-us.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    View Nofitication
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <p>
+                        <span class="small text-muted d-flock">
+                            Notification date/time
+                        </span>
+                        <strong>23/May/20201 : 9:30pm</strong>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Soluta expedita autem minus sequi voluptas enim
+                        repudiandae aut, laudantium omnis rem magnam aperiam
+                        asperiores maiores molestias. Incidunt veniam
+                        voluptatibus alias quo?
+                    </p>
+
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+
+                <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Close
+                </button>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" data-bs-backdrop="static" id="viewReviewsModal"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/about-us.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    Review Confirmation
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Post Title
+                        </span>
+                        <strong>
+                            PC Remote Trouble Shooting
+                        </strong>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                    </p>
+
+                    <p>
+                        <span class="small text-primary d-block">
+                            Review Date
+                        </span>
+                        31st May 2021
+                    </p>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Written by
+                        </span>
+                        Adam Johns
+                    </p>
+
+                    <p class="m-0">
+                        <span class="small text-primary d-block">
+                            Star rating
+                        </span>
+                    </p>
+                    <div class="star-ratings mb-4">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-mute"></i>
+                    </div>
+                    <p>
+                        <span class="small text-muted d-block">
+                            Review
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                        minus atque. Nulla dolores reprehenderit facilis odio
+                        quasi aspernatur cumque placeat, nam et sint similique
+                        enim laborum!
+                    </p>
+
+
+
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" class="mr-4" />
+                        Approve and publish review</label>
+
+
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+
+                <button class="btn btn-primary">
+                    Confirm review
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    Cancel invitation
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" data-bs-backdrop="static" id="viewQuoteModal"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/about-us.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    View Quotation
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Requeste by
+                        </span>
+                        <strong>
+                            Amiliya Emma John
+                        </strong>
+
+
+                    </p>
+
+                    <p>
+                        <span class="small text-primary d-block">
+                            Email address
+                        </span>
+                        <strong>
+                            <a href="#"> amilayjohn@astovin.com</a>
+                        </strong>
+
+
+                    </p>
+
+                    <p>
+                        <span class="small text-primary d-block">
+                            Desciption
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                    </p>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Date / Time
+                        </span>
+                        23/12/2020
+                    </p>
+
+
+                    <p class="m-0">
+                        <span class="small text-primary d-block">
+                            Services Requested
+                        </span>
+                        <strong> Network Troubleshooting</strong>
+                    </p>
+                    <ul>
+                        <li>Network Security implementation</li>
+                        <li>VPN</li>
+                        <li>Surveillance</li>
+                        <li>Secure data communications</li>
+                        <li>Secure voice communications</li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Close
+                </button>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" data-bs-backdrop="static" id="viewRemoteAssistance"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/slide-3.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    Remote Assistance
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Requeste by
+                        </span>
+                        <strong>
+                            Emma Juliya
+                        </strong>
+                    </p>
+
+                    <p>
+                        <span class="small text-primary d-block">
+                            Email address
+                        </span>
+                        <strong>
+                            <a href="#"> amilayjohn@astovin.com</a>
+                        </strong>
+                    </p>
+
+                    <p>
+                        <span class="small text-primary d-block">
+                            Desciption
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium repudiandae quisquam recusandae inventore,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        <span class="small text-primary d-block">
+                            Date / Time
+                        </span>
+                        23/12/2020
+                    </p>
+
+                    <p class="m-0">
+                        <span class="small text-primary d-block">
+                            Services Requested
+                        </span>
+                        <strong> Network Troubleshooting</strong>
+                    </p>
+                    <ul>
+                        <li>PC Troubleshooting</li>
+                        <li>Software Troubleshooting</li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" data-bs-backdrop="static" id="viewMessageModal"
+    tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable
+        modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-image" style="background:
+                url('../public/images/about-us.jpeg') center center no-repeat;
+                background-size: cover;">
+
+                <h5 class="modal-title">
+                    Messages
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="message-thread-wrapper">
+                    <div class="message-thread">
+                        <div class="customer-thread d-flex">
+                            <div class="profile-avatar">
+                                <img src="../public/images/avatars/avatar-1.png" width="32" height="32"/>
+                            </div>
+                            <div class="message-bubble">
+                                <div class="d-flex justify-content-between mb-2"> <span >Customer</span>
+                                    <span class="date-time">21/12/2020 | 9:13 am</span></div>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Laudantium repudiandae quisquam recusandae
+                                inventore,
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </div>
+                        </div>
+
+                        <div class="user-thread d-flex">
+                           
+                            <div class="message-bubble">
+                                <div class="d-flex justify-content-between mb-2"><span>User</span>
+                                    <span class="date-time">21/12/2020 | 11:33 am</span></div>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Laudantium repudiandae quisquam recusandae
+                                inventore,
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </div>
+                            <div class="profile-avatar">
+                                <img src="../public/images/avatars/avatar-5.png" width="32" height="32"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Type Message"
+                            class="form-control" />
+                        <button class="btn btn-primary">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="profile-info">
+      <figure>
+        <img src="../public/images/profile.png" width="144">
+      </figure>
+      <div class="profile-user">
+        Adam Jones
+        <span>
+          Artist . Designer
+        </span>
+        <a href="mailto:andrewemilya@gmail.com">andrewemilya@gmail.com</a>
+        <div class="profile-user__links">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+
+    <ul class="profile-update-info">
+      <li>
+        <a href="/"><span class="badge badge-warning">03</span>New
+          Messages</a>
+      </li>
+      <li>
+        <a href="/"><span class="badge badge-warning">03</span>New Reviews</a>
+      </li>
+      <li>
+        <a href="/"><span class="badge badge-warning">03</span>New
+          Quotations</a>
+      </li>
+
+      <li>
+        <a href="/"><span class="badge badge-warning">123</span>Profile
+          Views</a>
+      </li>
+      <li>
+        <a href="/"><span class="badge badge-warning">23</span>Followers</a>
+      </li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <nav class="profile-navigation">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <span class="icon-IconDashboard"></span> Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#">
+       <span class="icon-IconProfileSettings"></span>     Profile Settings
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+          <span class="icon-IconPromotions"></span>  Posted Promotions
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+       <span class="icon-IconView"></span>     Posted Services
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <span class="icon-IconDashboard"></span> Meetings
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <span class="icon-IconBusiness"></span>  Quotations Received
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon-IconProfileMessage"></span> Messages
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon-IconHeaderBell"></span> Notifications
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon-IconReviews"></span> Reviews
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon-IconFollowing"></span> Followers
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon-IconPower"></span>    Deactivate
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+           <span class="icon-IconLogout"></span>  Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-8">
+      <div class="card mt-4 mb-4">
+        <div class="card-body">
+          <div class="user-profile-title">
+            <h1>
+              Posted services
+            </h1>
+            <h3>
+              manage posted services (edit, update, delete)
+            </h3>
           </div>
-          <ul>
-            <li>
-              <label> <input type="checkbox">
-                Show Promotions (12)
-              </li>
+          <div class="search-add-wrapper">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="search-content">
+                <form>
+                  <span class="icon-IconSearch"></span>
+                  <input type="text" class="form-control" placeholder="Search" />
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-success float-right"> <i class="fa fa-add"></i> Create post </button>
+            </div>
+          </div>
+          </div>
+
+          <div>
+            <table cellpadding="0" cellspacing="0" class="user-profile-table">
+              <thead>
+                <tr>
+                  <th>
+                    Serivice Title
+                  </th>
+
+                  <th>
+                    Posted Date
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
+
+                  <td>
+                    2020-03-26
+                  </td>
+
+                  <td>
+                    <span class="badge badge-success">Active</span>
+                  </td>
+                  <td>
+
+                    <a href="#">
+                      <span class="icon-IconEdit"></span>
+                    </a>
+                    <a href="#">
+                      <span class="icon-IconDelete"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
+
+                  <td>
+                    2020-03-26
+                  </td>
+
+                  <td>
+                    <span class="badge badge-warning">Pending</span>
+                  </td>
+                  <td>
+
+                    <a href="#">
+                      <span class="icon-IconEdit"></span>
+                    </a>
+                    <a href="#">
+                      <span class="icon-IconDelete"></span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="search-results-footer d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="mr-2">
+            Show results
+          </div>
+          <div class="dropdown search-filter-dropdown small-version">
+            <button class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown">
+              <span>24</span> <span class="icon-IconArrowDown"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"> 24</li>
+              <li class="dropdown-item"> 48</li>
+              <li class="dropdown-item"> 72</li>
 
             </ul>
           </div>
-          <div class="card filter-card p-0">
-            <div class="filter-title">
-              Filter by Profile
-            </div>
-            <ul>
-              <li>
-                <label> <input type="checkbox">
-                  Business Profile / Company
-                </li>
-                <li>
-                  <label> <input type="checkbox">
-                    Individual / freelancer
-                  </li>
-                </ul>
-              </div>
-              <div class="card filter-card p-0">
-                <div class="filter-alert">
-                  <span class="icon-IconBell" style="font-size:32px;"></span>
-                  <p>
-                    Search alert <br>
-                    <span>
-                      Get notified when new items are posted
-                    </span>
-                  </p>
-
-                </div>
-
-                <div class="filter-title">
-                  Categories
-                </div>
-                <ul>
-                  <li>
-                    <label> <input type="checkbox">
-                      PC Repair
-                    </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Printer Repair </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Servers Repair </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Routers & Switchers Repair </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Corporate-LANs/WANs </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Computer hardware/software </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Secure data communications </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Secure voice communications </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      VPN </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Data recovery </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Remote IT Support </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Surveillance </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Network Security implementation </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Mobile phone repair </label>
-                  </li>
-                  <li>
-                    <label> <input type="checkbox">
-                      Staff training </label>
-                  </li>
-
-                </ul>
-              </div>
-              <div class="card filter-card p-0">
-                <div class="filter-title">
-                  Sort by Price
-                </div>
-                <ul>
-                  <li>
-                    <label> <input type="checkbox">
-                      $
-                    </li>
-                    <li>
-                      <label> <input type="checkbox">
-                        $$
-                      </li>
-                      <li>
-                        <label> <input type="checkbox">
-                          $$
-                        </li>
-                        <li>
-                          <label> <input type="checkbox">
-                            $$$
-                          </li>
-                        </ul>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-
-                    <div class="py-4 d-flex justify-content-between
-                      sorting-options">
-                      <div class="search-results-count">
-                        <div class="results-count">
-                          Search results | <span>45 Results found</span>
-                        </div>
-                        <div class="results-keyword">
-                          Pc reparing in Los Angels
-                        </div>
-                      </div>
-                      <div class="d-flex">
-                        <div>
-                          <div class="dropdown search-filter-dropdown">
-                            <button class="btn btn-secondary dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown">
-                              <span>View</span> <span
-                                class="icon-IconArrowDown"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item" href="#">
-                                <span class="icon-IconView"></span>
-                                Grid View
-                              </li>
-                              <li class="dropdown-item" href="#">
-                                <i class="fa fa-list"></i>
-                                List View
-                              </li>
-                              <li class="dropdown-item" href="#">
-                                <span class="icon-IconMarker"></span>
-                                Map View
-                              </li>
-                            </ul>
-                          </div>
-
-                        </div>
-                        <div>
-                          <div class="dropdown search-filter-dropdown">
-                            <button class="btn btn-secondary dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown">
-                              <span>Distance</span> <span
-                                class="icon-IconArrowDown"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-
-                                <a href="#">30 miles</a>
-                              </li>
-                              <li class="dropdown-item" href="#">
-
-                                40 miles
-                              </li>
-                              <li class="dropdown-item" href="#">
-
-                                50 miles
-                              </li>
-                              <li class="dropdown-item">
-
-                                60 miles
-                              </li>
-                              <li class="dropdown-item" href="#">
-
-                                70 miles
-                              </li>
-                              <li class="dropdown-item" href="#">
-
-                                80 miles
-                              </li>
-                            </ul>
-                          </div>
-
-                        </div>
-                        <div>
-                          <div class="dropdown search-filter-dropdown">
-                            <button class="btn btn-secondary dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown">
-                              <span>Sort results</span> <span
-                                class="icon-IconArrowDown"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-                                Promotions
-                              </li>
-                              <li class="dropdown-item"> Most recent</li>
-                              <li class="dropdown-item"> Best match</li>
-                              <li class="dropdown-item"> Top rating</li>
-                              <li class="dropdown-item"> Lowest pricing</li>
-                              <li class="dropdown-item"> High pricing</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="row mb-4">
-                      <div class="col-md-4">
-                        <div class="card service_card p-0 w-100">
-                          <div class="card-body">
-                            <div class="service_image">
-                              <span class="badge badge-warning">
-                                Ad
-                              </span>
-                              <img src="../public/images/services/s1.png" />
-                            </div>
-                            <div class="card-text">
-                              <div class="comp_name">
-                                <div size="64"></div>
-                                RF computer services
-                              </div>
-                              <div class="service_title">
-                                Computer, Laptop, Mobile Phone, Repairs, Sales
-                                and Service
-                              </div>
-                              <div class="service_rating">
-                                <div class="star-rating">
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-mute"></i>
-                                </div>
-                              </div>
-                              <div class="category-tags">
-                                <a href="/">Networking</a>
-                                <a href="/">Repair</a>
-                              </div>
-                              <div class="customer-satisfaction">
-                                <span>
-                                  120
-                                </span>
-                                Satisfied customers
-                              </div>
-                              <div class="service_price">
-                                <small>
-                                  Price
-                                </small>
-                                $$ USD
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card service_card p-0 w-100">
-                          <div class="card-body">
-                            <div class="service_image">
-                              <span class="badge badge-warning">
-                                Ad
-                              </span>
-                              <img src="../public/images/services/s2.png" />
-                            </div>
-                            <div class="card-text">
-                              <div class="comp_name">
-                                <div size="64"></div>
-                                RF computer services
-                              </div>
-                              <div class="service_title">
-                                Computer, Laptop, Mobile Phone, Repairs, Sales
-                                and Service
-                              </div>
-                              <div class="service_rating">
-                                <div class="star-rating">
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-mute"></i>
-                                </div>
-                              </div>
-                              <div class="category-tags">
-                                <a href="/">Networking</a>
-                                <a href="/">Repair</a>
-                              </div>
-                              <div class="customer-satisfaction">
-                                <span>
-                                  120
-                                </span>
-                                Satisfied customers
-                              </div>
-                              <div class="service_price">
-                                <small>
-                                  Price
-                                </small>
-                                $$ USD
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card service_card p-0 w-100">
-                          <div class="card-body">
-                            <div class="service_image">
-                              <span class="badge badge-warning">
-                                Ad
-                              </span>
-                              <img src="../public/images/services/s3.png" />
-                            </div>
-                            <div class="card-text">
-                              <div class="comp_name">
-                                <div size="64"
-                                  src="../public/images/profile.png"></div>
-                                RF computer services
-                              </div>
-                              <div class="service_title">
-                                Computer, Laptop, Mobile Phone, Repairs, Sales
-                                and Service
-                              </div>
-                              <div class="service_rating">
-                                <div class="star-rating">
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-warning"></i>
-                                  <i class="fa fa-star text-mute"></i>
-                                </div>
-                              </div>
-                              <div class="category-tags">
-                                <a href="/">Networking</a>
-                                <a href="/">Repair</a>
-                              </div>
-                              <div class="customer-satisfaction">
-                                <span>
-                                  120
-                                </span>
-                                Satisfied customers
-                              </div>
-                              <div class="service_price">
-                                <small>
-                                  Price
-                                </small>
-                                $$ USD
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                 <section class="results-in-google-maps">
-
-    <div id="google-map-results">
-        
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-</section>
-
-
-
-                  </div>
-                </div>
-              </div>
-
+  </div>
+</div>
     <footer>
     <div class="container">
         <div class="row">
