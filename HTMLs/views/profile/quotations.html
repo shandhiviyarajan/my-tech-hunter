@@ -13,26 +13,49 @@ title : My Tech Hunter - HTML version
         <div class="card-body">
           <div class="user-profile-title">
             <h1>
-             Posted Promotions
+              Quotes
             </h1>
             <h3>
-              manage posted services (edit, update, delete)
+              manage messages (edit, update, delete)
             </h3>
           </div>
           <div class="search-add-wrapper">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="search-content">
-                <form>
-                  <span class="icon-IconSearch"></span>
-                  <input type="text" class="form-control" placeholder="Search" />
-                </form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="d-flex">
+                  <div class="search-content">
+                    <form>
+                      <span class="icon-IconSearch"></span>
+                      <input type="text" class="form-control"
+                        placeholder="Search" />
+                    </form>
+
+                  </div>
+                  <div class="dropdown search-filter-dropdown ml-4">
+                    <button class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown">
+                      <span>Sort by</span> <span class="icon-IconArrowDown"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item" href="#">
+
+                        New
+                      </li>
+                      <li class="dropdown-item" href="#">
+
+                        Closed
+                      </li>
+                      <li class="dropdown-item" href="#">
+
+                        Other
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+
             </div>
-            <div class="col-md-6">
-              <button class="btn btn-success float-right"> <i class="fa fa-add"></i> Create post </button>
-            </div>
-          </div>
           </div>
 
           <div>
@@ -40,14 +63,13 @@ title : My Tech Hunter - HTML version
               <thead>
                 <tr>
                   <th>
-                    Serivice Title
-                  </th>
-
-                  <th>
-                    Posted Date
+                    Review
                   </th>
                   <th>
-                    Valid Date
+                    Post
+                  </th>
+                  <th>
+                    Date
                   </th>
                   <th>
                     Status
@@ -59,8 +81,10 @@ title : My Tech Hunter - HTML version
               </thead>
 
               <tbody>
-
-                <tr>
+                <tr class="new-message">
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
                   <td>
                     <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
                   </td>
@@ -69,18 +93,38 @@ title : My Tech Hunter - HTML version
                     2020-03-26
                   </td>
 
+                  <td>
+                    <span class="badge badge-success">New</span>
+                  </td>
+
+                  <td>
+                    <a href="#" title="Reply" data-bs-toggle="modal" data-bs-target="#viewQuoteModal">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="#">
+                      <span class="icon-IconDelete"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="new-message">
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
 
                   <td>
                     2020-03-26
                   </td>
 
                   <td>
-                    <span class="badge badge-success">Active</span>
+                    <span class="badge badge-success">New</span>
                   </td>
-                  <td>
 
-                    <a href="#">
-                      <span class="icon-IconEdit"></span>
+                  <td>
+                    <a href="#" title="Reply" data-bs-toggle="modal" data-bs-target="#viewQuoteModal">
+                      <i class="fa fa-eye"></i>
                     </a>
                     <a href="#">
                       <span class="icon-IconDelete"></span>
@@ -91,29 +135,31 @@ title : My Tech Hunter - HTML version
                   <td>
                     <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
                   </td>
+                  <td>
+                    <a href="/single-page">Computer, Laptop, Mobile Phone…..</a>
+                  </td>
 
                   <td>
                     2020-03-26
                   </td>
 
 
+
                   <td>
-                    2020-03-26
+                    -
                   </td>
 
                   <td>
-                    <span class="badge badge-warning">Pending</span>
-                  </td>
-                  <td>
 
-                    <a href="#">
-                      <span class="icon-IconEdit"></span>
+                    <a href="#" title="Reply">
+                      <i class="fa fa-eye"></i>
                     </a>
                     <a href="#">
                       <span class="icon-IconDelete"></span>
                     </a>
                   </td>
                 </tr>
+
               </tbody>
             </table>
           </div>

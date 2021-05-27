@@ -306,7 +306,8 @@ body {
 
   .btn.btn-secondary {
     color: $orange_light;
-    padding: 6px 24px;
+    padding: 12px 24px;
+    height: 48px;
     font-weight: 400;
     display: block;
     width: 220px;
@@ -957,11 +958,22 @@ body {
 .swiper-container {
   padding: 24px 0px;
 }
+.swiper-pagination-bullets{
+  text-align:center;
+
+  .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background:$primary;
+    margin:0px 6px;
+  }
+}
 //swiper next prev buttons
 .btn_next,
 .btn_prev {
   width: 44px;
   height: 44px;
+  border-radius: 24px !important;
   position: absolute;
   padding: 6px;
   top: 50%;
@@ -969,9 +981,17 @@ body {
   background: #fff;
   margin-top: -22px;
   color: $primary;
+  
+  &:hover{
+    background:#f1f1f1;
+  }
 
   i.fa {
     font-size: 28px;
+  }
+
+  &.swiper-button-disabled{
+    opacity:.25;
   }
 }
 
@@ -1025,10 +1045,9 @@ body {
       text-decoration: none;
     }
 
-    a{
+    a {
       text-decoration: none !important;
     }
-
   }
 
   .service_title {
@@ -1372,18 +1391,7 @@ body {
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background: #fff;
-  border-radius: 100px;
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
 
-  &:after {
-    transform: scale(0.5);
-  }
-}
 
 .clip-mask {
   position: relative;
@@ -1616,50 +1624,6 @@ body {
 
 .profile_slide {
   margin: 24px 0px;
-}
-
-.user-profile-title {
-  padding: 24px 0px;
-
-  h1 {
-    color: #0068ff;
-    font-size: 36px;
-    font-weight: 900;
-  }
-
-  h3 {
-    line-height: 1.6em;
-    font-weight: 600;
-    font-size: 24px;
-    color: #705858;
-
-    span {
-      color: $orange_light;
-    }
-  }
-}
-
-.user-profile-table {
-  width: 100%;
-
-  tr {
-    th {
-      font-size: 16px;
-      color: #747474;
-      font-weight: bold;
-    }
-  }
-
-  tr td {
-    padding: 12px 12px;
-    border-bottom: thin solid #d9d9d9;
-  }
-
-  tr:nth-child(odd) {
-    td {
-      background: #f8f8f8;
-    }
-  }
 }
 
 label {
@@ -2120,7 +2084,6 @@ footer {
   input {
     background: none;
     border: thin solid #fff;
-    border-radius: 4px 0px 0px 4px;
   }
 
   button {
@@ -2128,8 +2091,9 @@ footer {
     color: $primary;
     font-weight: bold;
     width: 240px;
-    border-radius: 0px 4px 4px 0px;
+
     height: 48px;
+    margin-left: 12px;
   }
 
   .form-group > div {
@@ -2171,6 +2135,16 @@ span.badge-warning {
   color: #fff;
 }
 
+span.badge-success {
+  background: $success;
+  color: #fff;
+}
+
+span.badge-danger {
+  background: $danger;
+  color: #fff;
+}
+
 .divider {
   border-bottom: thin solid #d9d9d9;
   clear: both;
@@ -2184,4 +2158,11 @@ span.badge-warning {
   i.fa.text-mute {
     color: $gray-100 !important;
   }
+}
+
+.float-right {
+  float: right !important;
+}
+.float-left {
+  float: left !important;
 }

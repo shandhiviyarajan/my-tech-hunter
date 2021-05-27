@@ -16,7 +16,7 @@
           content="" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" type="image/png" href="../public/favicon.png" />
+    <link rel="icon" type="image/png" href="../public/images/favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -70,6 +70,24 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANIg-GgobIKa95MgdD4_WwreBVpregN6c&libraries=places&v=3.31"></script>
 </head>
 <body>
+      <!-- GetButton.io widget -->
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        facebook: "102479301664003", // Facebook page ID
+        whatsapp: "7722493796", // WhatsApp number
+        call_to_action: "Message us", // Call to action
+        button_color: "#000000", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        order: "facebook,whatsapp", // Order of buttons
+        pre_filled_message: "Hello ", // WhatsApp pre-filled message
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
 <main>
     <header class="site-header" style="background:url('../public/images/tiger-header.jpg') center center
     no-repeat; background-size:cover;">
@@ -698,11 +716,11 @@
         </div>
       </div>
 
-      <div class="swiper-pagination-1"></div>
-      <a class="btn btn-default btn_prev">
+      <div class="recent_post_pro_swiper-pagination"></div>
+      <a class="btn btn-default btn_prev recent_post_pro_prev">
         <i class="fa fa-angle-left"></i>
       </a>
-      <a class="btn btn-default btn_next">
+      <a class="btn btn-default btn_next recent_post_pro_next">
         <i class="fa fa-angle-right"></i>
       </a>
     </div>
@@ -918,14 +936,15 @@
 
 
         </div>
-        <div class="swiper-pagination"></div>
-        <a class="btn btn-default btn_prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="btn btn-default btn_next">
-          <i class="fa fa-angle-right"></i>
-        </a>
+        
       </div>
+      <div class="recent_post_swiper-pagination"></div>
+      <a class="btn btn-default btn_prev recent_post_prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="btn btn-default btn_next recent_post_next">
+        <i class="fa fa-angle-right"></i>
+      </a>
     </div>
   </section>
 </div>
@@ -943,128 +962,156 @@
       </a>
     </div>
   </div>
-  <div class="container">
+  <div class="container position-relative">
     <div class="swiper-container" id="home_promotions">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="card service_card promotion-card p-0">
-        <div class="card-body">
-          <a href="/promotion/single-page">
-            <div class="service_image">
-              <img src="../public/images/promotions/p-1.png" />
-              <div class="promotion-percent">
-                20%
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="comp_name">
-                RF computer services
-              </div>
-              <div class="service_title">
-                Computer, Laptop, Mobile Phone, Repairs, Sales and Service
-              </div>
-              <div class="offer-valid">
-                Offer valid till <br>
-                Jan 26 2021
+            <div class="card-body">
+              <a href="/promotion/single-page">
+                <div class="service_image">
+                  <img src="../public/images/promotions/p-1.png" />
+                  <div class="promotion-percent">
+                    20%
+                  </div>
+                </div>
+                <div class="card-text">
+                  <div class="comp_name">
+                    RF computer services
+                  </div>
+                  <div class="service_title">
+                    Computer, Laptop, Mobile Phone, Repairs, Sales and Service
+                  </div>
+                  <div class="offer-valid">
+                    Offer valid till <br>
+                    Jan 26 2021
 
-              </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card service_card promotion-card p-0">
-        <div class="card-body">
-          <a href="/promotion/single-page">
-            <div class="service_image">
-              <img src="../public/images/promotions/p-3.png" />
-              <div class="promotion-percent">
-                20%
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="comp_name">
-                RF computer services
-              </div>
-              <div class="service_title">
-                Computer, Laptop, Mobile Phone, Repairs, Sales and Service
-              </div>
-              <div class="offer-valid">
-                Offer valid till <br>
-                Jan 26 2021
+            <div class="card-body">
+              <a href="/promotion/single-page">
+                <div class="service_image">
+                  <img src="../public/images/promotions/p-3.png" />
+                  <div class="promotion-percent">
+                    20%
+                  </div>
+                </div>
+                <div class="card-text">
+                  <div class="comp_name">
+                    RF computer services
+                  </div>
+                  <div class="service_title">
+                    Computer, Laptop, Mobile Phone, Repairs, Sales and Service
+                  </div>
+                  <div class="offer-valid">
+                    Offer valid till <br>
+                    Jan 26 2021
 
-              </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card service_card promotion-card p-0">
-        <div class="card-body">
-          <a href="/promotion/single-page">
-            <div class="service_image">
-              <img src="../public/images/promotions/p-2.png" />
-              <div class="promotion-percent">
-                20%
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="comp_name">
-                RF computer services
-              </div>
-              <div class="service_title">
-                Computer, Laptop, Mobile Phone, Repairs, Sales and Service
-              </div>
-              <div class="offer-valid">
-                Offer valid till <br>
-                Jan 26 2021
+            <div class="card-body">
+              <a href="/promotion/single-page">
+                <div class="service_image">
+                  <img src="../public/images/promotions/p-2.png" />
+                  <div class="promotion-percent">
+                    20%
+                  </div>
+                </div>
+                <div class="card-text">
+                  <div class="comp_name">
+                    RF computer services
+                  </div>
+                  <div class="service_title">
+                    Computer, Laptop, Mobile Phone, Repairs, Sales and Service
+                  </div>
+                  <div class="offer-valid">
+                    Offer valid till <br>
+                    Jan 26 2021
 
-              </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card service_card promotion-card p-0">
-        <div class="card-body">
-          <a href="/promotion/single-page">
-            <div class="service_image">
-              <img src="../public/images/promotions/p-3.png" />
-              <div class="promotion-percent">
-                20%
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="comp_name">
-                RF computer services
-              </div>
-              <div class="service_title">
-                Computer, Laptop, Mobile Phone, Repairs, Sales and Service
-              </div>
-              <div class="offer-valid">
-                Offer valid till <br>
-                Jan 26 2021
+            <div class="card-body">
+              <a href="/promotion/single-page">
+                <div class="service_image">
+                  <img src="../public/images/promotions/p-3.png" />
+                  <div class="promotion-percent">
+                    20%
+                  </div>
+                </div>
+                <div class="card-text">
+                  <div class="comp_name">
+                    RF computer services
+                  </div>
+                  <div class="service_title">
+                    Computer, Laptop, Mobile Phone, Repairs, Sales and Service
+                  </div>
+                  <div class="offer-valid">
+                    Offer valid till <br>
+                    Jan 26 2021
 
-              </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <div class="card service_card promotion-card p-0">
+            <div class="card-body">
+              <a href="/promotion/single-page">
+                <div class="service_image">
+                  <img src="../public/images/promotions/p-1.png" />
+                  <div class="promotion-percent">
+                    20%
+                  </div>
+                </div>
+                <div class="card-text">
+                  <div class="comp_name">
+                    RF computer services
+                  </div>
+                  <div class="service_title">
+                    Computer, Laptop, Mobile Phone, Repairs, Sales and Service
+                  </div>
+                  <div class="offer-valid">
+                    Offer valid till <br>
+                    Jan 26 2021
+
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <a class="btn btn-default btn_prev">
-        <i class="fa fa-angle-left"></i>
-      </a>
-      <a class="btn btn-default btn_next">
-        <i class="fa fa-angle-right"></i>
-      </a>
     </div>
+    <div class="home_promotions_swiper-pagination"></div>
+    <a class="btn btn-default btn_prev home_promotions_prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="btn btn-default btn_next home_promotions_next">
+      <i class="fa fa-angle-right"></i>
+    </a>
+
+    
   </div>
 </section>
 
@@ -1306,7 +1353,7 @@
       Browse through some of our most popular categories
     </p>
   </div>
-  <div class="container">
+  <div class="container position-relative">
     <div class="swiper-container" id="home_categories" style="width: 100%;
       margin:0 auto">
       <!-- Additional required wrapper -->
@@ -1326,6 +1373,26 @@
                 </div>
                 <figure>
                   <img src="../public/images/categories/category_4.jpg" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card category_card p-0">
+            <div class="card-body">
+              <div class="category_image">
+                <div>
+                  <div class="category_title">
+                    Remote services <br>
+                    & troubleshooting
+                  </div>
+                  <div class="category_count">
+                    32 Services available
+                  </div>
+                </div>
+                <figure>
+                  <img src="../public/images/categories/category_2.png" />
                 </figure>
               </div>
             </div>
@@ -1395,6 +1462,13 @@
 
       </div>
     </div>
+    <div class="home_categories_swiper-pagination"></div>
+    <a class="btn btn-default btn_prev home_categories_prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="btn btn-default btn_next home_categories_next">
+      <i class="fa fa-angle-right"></i>
+    </a>
   </div>
 </section>
 
@@ -1408,7 +1482,7 @@
       Browse through some of our most popular categories
     </p>
   </div>
-  <div class="container">
+  <div class="container position-relative">
     <div class="swiper-container" id="home_categories" style="width: 100%;
       margin:0 auto">
       <!-- Additional required wrapper -->
@@ -1428,6 +1502,26 @@
                 </div>
                 <figure>
                   <img src="../public/images/categories/category_4.jpg" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card category_card p-0">
+            <div class="card-body">
+              <div class="category_image">
+                <div>
+                  <div class="category_title">
+                    Remote services <br>
+                    & troubleshooting
+                  </div>
+                  <div class="category_count">
+                    32 Services available
+                  </div>
+                </div>
+                <figure>
+                  <img src="../public/images/categories/category_2.png" />
                 </figure>
               </div>
             </div>
@@ -1497,6 +1591,13 @@
 
       </div>
     </div>
+    <div class="home_categories_swiper-pagination"></div>
+    <a class="btn btn-default btn_prev home_categories_prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="btn btn-default btn_next home_categories_next">
+      <i class="fa fa-angle-right"></i>
+    </a>
   </div>
 </section>
 
@@ -1980,7 +2081,9 @@
                 </div>
             </footer>
 
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-595f7dad07e72d1b"></script>
     <script src="../public/scripts/app.js" defer></script>
+    
 </main>
 
 </body>

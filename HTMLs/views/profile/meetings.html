@@ -13,26 +13,49 @@ title : My Tech Hunter - HTML version
         <div class="card-body">
           <div class="user-profile-title">
             <h1>
-             Posted Promotions
+              Meetings
             </h1>
             <h3>
               manage posted services (edit, update, delete)
             </h3>
           </div>
           <div class="search-add-wrapper">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="search-content">
-                <form>
-                  <span class="icon-IconSearch"></span>
-                  <input type="text" class="form-control" placeholder="Search" />
-                </form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="d-flex">
+                  <div class="search-content">
+                    <form>
+                      <span class="icon-IconSearch"></span>
+                      <input type="text" class="form-control"
+                        placeholder="Search" />
+                    </form>
+
+                  </div>
+                  <div class="dropdown search-filter-dropdown ml-4">
+                    <button class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown">
+                      <span>Sort by</span> <span class="icon-IconArrowDown"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item" href="#">
+
+                        New
+                      </li>
+                      <li class="dropdown-item" href="#">
+
+                        Closed
+                      </li>
+                      <li class="dropdown-item" href="#">
+
+                        Other
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+
             </div>
-            <div class="col-md-6">
-              <button class="btn btn-success float-right"> <i class="fa fa-add"></i> Create post </button>
-            </div>
-          </div>
           </div>
 
           <div>
@@ -40,14 +63,14 @@ title : My Tech Hunter - HTML version
               <thead>
                 <tr>
                   <th>
-                    Serivice Title
+                    Meeting Title
                   </th>
 
                   <th>
-                    Posted Date
+                    Date
                   </th>
                   <th>
-                    Valid Date
+                    URL
                   </th>
                   <th>
                     Status
@@ -68,19 +91,15 @@ title : My Tech Hunter - HTML version
                   <td>
                     2020-03-26
                   </td>
-
-
                   <td>
-                    2020-03-26
-                  </td>
-
-                  <td>
-                    <span class="badge badge-success">Active</span>
+                    <a href="#">https://meet.google.com/tmp-vpzy-pbw</a>
                   </td>
                   <td>
-
-                    <a href="#">
-                      <span class="icon-IconEdit"></span>
+                    <span class="badge badge-success">New</span>
+                  </td>
+                  <td >
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#viewMeetingsModal">
+                      <i class="fa fa-eye"></i>
                     </a>
                     <a href="#">
                       <span class="icon-IconDelete"></span>
@@ -95,19 +114,16 @@ title : My Tech Hunter - HTML version
                   <td>
                     2020-03-26
                   </td>
-
-
                   <td>
-                    2020-03-26
+                    <a href="#">https://meet.google.com/tmp-vpzy-pbw</a>
                   </td>
-
                   <td>
-                    <span class="badge badge-warning">Pending</span>
+                    <span class="badge badge-warning">Done</span>
                   </td>
                   <td>
 
                     <a href="#">
-                      <span class="icon-IconEdit"></span>
+                      <i class="fa fa-eye"></i>
                     </a>
                     <a href="#">
                       <span class="icon-IconDelete"></span>

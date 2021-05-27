@@ -167,11 +167,11 @@
                     slidesPerView: 'auto',
                     centeredSlides: false,
                     navigation: {
-                        nextEl: ".btn_prev",
-                        prevEl: ".btn_next",
+                        nextEl: ".recent_post_next",
+                        prevEl: ".recent_post_prev",
                     },
                     pagination: {
-                        el: '.swiper-pagination',
+                        el: '.recent_post_swiper-pagination',
                         type: 'bullets',
                     },
                     breakpoints: {
@@ -212,11 +212,11 @@
                     slidesPerView: 'auto',
                     centeredSlides: false,
                     navigation: {
-                        nextEl: ".btn_prev",
-                        prevEl: ".btn_next",
+                        nextEl: ".recent_post_pro_next",
+                        prevEl: ".recent_post_pro_prev",
                     },
                     pagination: {
-                        el: '.swiper-pagination',
+                        el: '.recent_post_pro_swiper-pagination',
                         type: 'bullets',
                     },
                     breakpoints: {
@@ -254,6 +254,14 @@
                     spaceBetween: 0,
                     slidesPerView: 4,
                     centeredSlides: false,
+                    navigation: {
+                        nextEl: ".home_promotions_next",
+                        prevEl: ".home_promotions_prev",
+                    },
+                    pagination: {
+                        el: '.home_promotions_swiper-pagination',
+                        type: 'bullets',
+                    },
                     breakpoints: {
                         // when window width is >= 320px
                         320: {
@@ -291,6 +299,14 @@
                     spaceBetween: 0,
                     slidesPerView: 4,
                     centeredSlides: false,
+                    navigation: {
+                        nextEl: ".home_categories_next",
+                        prevEl: ".home_categories_prev",
+                    },
+                    pagination: {
+                        el: '.home_categories_swiper-pagination',
+                        type: 'bullets',
+                    },
                     breakpoints: {
                         // when window width is >= 320px
                         320: {

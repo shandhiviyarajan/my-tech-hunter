@@ -2,13 +2,119 @@
 layout : default.html
 title : My Tech Hunter - HTML version
 ---
-
-<div class="container">
+<div class="container" id="user_profile">
   <div class="row">
     <div class="col-md-3">
-      Left side bar
+      {{> profile_left_nav}}
     </div>
+
     <div class="col-md-9">
+      <div class="card mt-4 mb-4">
+        <div class="card-body">
+          <div class="user-profile-title">
+            <h1>
+              Profile Settings
+            </h1>
+
+            <h3>
+              Update your profile information, location, contact details…
+            </h3>
+
+
+          </div>
+
+          <p class="mb-2">
+            <strong>Personal Details</strong>
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" placeholder="First name" class="form-control"
+                />
+            </div>
+            <div class="col-md-6">
+              <input type="text" placeholder="Last name" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" placeholder="Email address"
+                class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <input type="tel" placeholder="Phone number" class="form-control"
+                />
+            </div>
+
+            <div class="col-md-6">
+              <input type="text" placeholder="Designation" class="form-control"
+                />
+            </div>
+          </div>
+
+          <p class="mb-2">
+            <strong>Address</strong>
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" placeholder="Address line 1" class="form-control" />
+            </div>
+            <div class="col-md-6">
+              <input type="text" placeholder="Address line 2" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" placeholder="City" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <input type="tel" placeholder="State" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <input type="text" placeholder="Zip code" class="form-control" />
+            </div>
+            <div class="col-md-6">
+              <input type="text" placeholder="Country" class="form-control" />
+            </div>
+          </div>
+
+          <p class="mb-2">
+            <strong>Reset Password</strong>
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="password" placeholder="Old Password" class="form-control" />
+              <input type="password" placeholder="New Password" class="form-control" />
+              <input type="password" placeholder="Confirm New Password" class="form-control" />
+            </div>
+            
+          <p>
+            <strong>
+              Location map
+            </strong>
+          </p>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="settings-google-map"></div>
+
+            <div class="settings-map-address">
+              <p class="text-muted">
+                <strong>
+                  23/2 Malone Street Morphett Vale Los Angels</strong>
+              </p>
+            </div>
+            </div>
+            <div class="col-md-3 mt-4">
+              <button class="btn btn-primary">
+                Update Profile
+              </button>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
 
     </div>
   </div>
