@@ -91,7 +91,8 @@
     })();
   </script>
 <main>
-    <header class="site-header" style="background:url('../public/images/tiger-header.jpg') center center
+    <header class="site-header"
+    style="background:url('../public/images/tiger-header.jpg') center center
     no-repeat; background-size:cover;">
     <section>
         <div class="top-header">
@@ -118,7 +119,7 @@
                         &nbsp;
                     </li>
 
-                    
+
                     <li>
                         <a href="#">
                             Advertisements
@@ -132,7 +133,8 @@
 
                     <li>
                         <div class="dropdown">
-                            <button class="btn btn-primary" data-bs-toggle="dropdown">
+                            <button class="btn btn-primary"
+                                data-bs-toggle="dropdown">
                                 Languages
                             </button>
 
@@ -148,6 +150,63 @@
         </div>
     </section>
 
+    <div class="d-flex mobile-toggle justify-content-between">
+        <button class="toggle-menu">
+            <span class="icon-IconMenu"></span>
+        </button>
+
+        <a href="/">
+            <img class="logo" src="public/images/favicon.png" />
+        </a>
+        <div>
+            <div class="dropdown profile-dropdown">
+                <button class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown" type="button">
+                    <i class="fa fa-user"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <form>
+                            <p>
+                                <strong>
+                                    User Registration
+                                </strong>
+                            </p>
+                            <div class="form-group"
+                                label-for="dropdown-form-email"
+                                @submit.stop.prevent>
+                                <input class="form-control"
+                                    id="dropdown-form-email"
+                                    size="sm"
+                                    placeholder="email@example.com"
+                                    />
+                            </div>
+                            <div class="form-group"
+                                label-for="dropdown-form-password">
+                                <input  class="form-control"
+                                    id="dropdown-form-password"
+                                    type="password"
+                                    size="sm"
+                                    placeholder="Password"
+                                    />
+                            </div>
+                            <label class="d-flex align-items-center mb-4">
+                                <input type="checkbox"
+                                class="mr-2" />  Remember me 
+                            </label>
+                            <div class="d-flex align-content-center">
+                                <button class="btn-block btn
+                                    btn-primary">Login</button>
+                            </div>
+
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
     <section>
         <div class="container">
             <div class="row">
@@ -160,7 +219,9 @@
                 <div class="col-md-8 py-4 d-flex justify-content-end
                     align-content-center section-sign-in">
 
-                    <button data-bs-toggle="modal" data-bs-target="#becomeMemberModal" class="mr-4 become-a-member btn btn-primary">
+                    <button data-bs-toggle="modal"
+                        data-bs-target="#becomeMemberModal" class="mr-4
+                        become-a-member btn btn-primary">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         Become a Member
                     </button>
@@ -180,7 +241,8 @@
                             <li class="dropdown-item"><a
                                     href="/become-tech-hunter">
                                     <i class="fa fa-user-circle"
-                                        aria-hidden="true"></i> Become a Tech Hunter Pro
+                                        aria-hidden="true"></i> Become a Tech
+                                    Hunter Pro
                                 </a>
                             </li>
                             <li class="dropdown-item"> <a
@@ -264,9 +326,7 @@
     </section>
     <!-- header navigation-->
     <section>
-        <a href="#" class="toggle-menu">
-  <i class="fa fa-bars"></i>
-</a>
+        
 <nav id="tech-hunter-menu-wrapper">
 
   <div class="container">

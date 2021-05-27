@@ -229,7 +229,15 @@
       }
 
       .dropdown-menu{
+        padding:24px;
         top:64px !important;
+        right: 0px !important;
+
+        &:active,
+        &:active:focus{
+          background:#fff;
+          outline:0;
+        }
 
       }
 
@@ -784,5 +792,12 @@
     div.card.package-info .package-details button {
       width: 100%;
     }
+  }
+  .btn_next,
+  .btn_prev{
+    display:none !important;
+  }
+  .swiper-pagination-bullets {
+    display:block;
   }
 }

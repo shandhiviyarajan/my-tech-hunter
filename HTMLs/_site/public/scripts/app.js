@@ -140,25 +140,25 @@
                         // when window width is >= 320px
                         320: {
                             slidesPerView: 1,
-                            spaceBetween: 12
+                            slidesPerView: "auto",
                         },
                         // when window width is >= 480px
                         480: {
                             slidesPerView: 1,
-                            spaceBetween: 12
+                            slidesPerView: "auto",
                         },
                         // when window width is >= 640px
                         640: {
                             slidesPerView: 2,
-                            spaceBetween: 12
+                            slidesPerView: "auto",
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 12
+                            slidesPerView: "auto",
                         },
                         900: {
                             slidesPerView: 3,
-                            spaceBetween: 12
+                            slidesPerView: "auto",
                         }
 
                     }
@@ -191,7 +191,7 @@
                     // Optional parameters
                     loop: false,
                     spaceBetween: 0,
-                    slidesPerView: 'auto',
+                    slidesPerView:4,
                     centeredSlides: false,
                     navigation: {
                         nextEl: ".recent_post_next",
@@ -204,25 +204,25 @@
                     breakpoints: {
                         // when window width is >= 320px
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 480px
                         480: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 640px
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: 4,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         }
                     }
@@ -234,6 +234,7 @@
             function _recent_post_pro() {
                 new Swiper('#recent_post_pro', {
                     // Optional parameters
+                    slidesPerView: 4,
                     loop: false,
                     spaceBetween: 0,
                     slidesPerView: 'auto',
@@ -249,25 +250,25 @@
                     breakpoints: {
                         // when window width is >= 320px
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 480px
                         480: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 640px
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: 4,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         }
                     }
@@ -292,25 +293,25 @@
                     breakpoints: {
                         // when window width is >= 320px
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 480px
                         480: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 640px
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: 4,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         }
 
@@ -337,25 +338,25 @@
                     breakpoints: {
                         // when window width is >= 320px
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 480px
                         480: {
-                            slidesPerView: 1,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         // when window width is >= 640px
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: 4,
+                            slidesPerView: "auto",
                             spaceBetween: 12
                         }
 

@@ -4139,7 +4139,13 @@ input[type=checkbox] {
     box-shadow: none;
   }
   header .profile-dropdown .dropdown-menu {
+    padding: 24px;
     top: 64px !important;
+    right: 0px !important;
+  }
+  header .profile-dropdown .dropdown-menu:active, header .profile-dropdown .dropdown-menu:active:focus {
+    background: #fff;
+    outline: 0;
   }
   header .profile-dropdown ul {
     right: 0px;
@@ -4564,6 +4570,15 @@ input[type=checkbox] {
   #home-price-component div.card.package-info .package-details button,
 #price-component div.card.package-info .package-details button {
     width: 100%;
+  }
+
+  .btn_next,
+.btn_prev {
+    display: none !important;
+  }
+
+  .swiper-pagination-bullets {
+    display: block;
   }
 }
 
