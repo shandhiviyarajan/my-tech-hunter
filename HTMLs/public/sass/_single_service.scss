@@ -524,7 +524,7 @@ label{
 }
 
 .available-hours,
-.search-tags {
+.search-tags-card {
   border-radius: 12px;
   .card-header {
     border-radius: 12px 12px 0px 0px;
@@ -547,9 +547,6 @@ label{
       color: $gray-300;
     }
   }
-}
-
-.search-tags {
   a.search-tag {
     float: left;
     text-decoration: none;
@@ -566,6 +563,46 @@ label{
     }
   }
 }
+
+.reviews-ratings-card{
+
+  .rating{
+    font-size:32px ;
+    font-weight:400;
+    color:$primary;
+    span{
+      font-size:14px;
+    }
+  }
+  div.card-header{
+    border-radius: 12px 12px 0px 0px;
+    background: #fff;
+    font-weight: 500;
+    padding: 8px 0px;
+    border: none;
+    text-align: left;
+  }
+  div.card-body{
+    padding:$gutters;
+  }
+  div.d-flex{
+    align-items: baseline;
+    justify-content: space-between;
+}
+  
+  div.progress{
+    width:80%;
+    height:8px;
+    margin:12px 0px;
+    border-radius:12px;
+    div.progress-bar{
+      height:8px;
+      background:$primary;
+      border-radius:12px;
+    }
+  }
+}
+
 
 
 .promotion-content {

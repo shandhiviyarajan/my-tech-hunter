@@ -1,0 +1,129 @@
+.home-package {
+
+  .home-package--title {
+    background: $primary;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: Center;
+    padding: 12px 0px;
+    border-radius: 100px;
+    color: #fff;
+    margin: 0px 0px 12px 0px;
+
+  }
+
+  .home-package--title.business {
+    background: $primary;
+  }
+
+  .package-header {
+    border-radius: 24px 24px 0px 0px;
+    background: $primary;
+    padding: 24px;
+
+    p {
+      text-align: center;
+      margin: 0px;
+      font-size: 12px;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-weight: 600;
+      text-align: center;
+      font-size: 48px;
+      color: #fff;
+    }
+
+
+  }
+
+  .col-lg-7,
+  .col-lg-5 {
+    .col-md-4,
+    .col {
+      > div {
+        background: #fff;
+        border-radius: 24px 24px 24px 24px;
+        transition: .3s ease;
+
+        &:hover {
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, .15);
+        }
+      }
+
+      a.btn {
+        margin: 12px auto;
+        display: block;
+        box-shadow: none;
+        width: 150px;
+        font-size: 14px;
+        color: #fff;
+        border:none;
+
+        &:hover {
+          background: #747474 !important;
+          color: #fff;
+        }
+      }
+
+      ol {
+
+        list-style: none;
+        padding: 0px 16px;
+
+
+        li {
+          font-size: 12px;
+          text-align: left;
+          padding: 12px 0px;
+          border-bottom: thin solid #d9d9d9;
+        }
+
+        li:last-child {
+          border: none;
+        }
+
+        li.package-title {
+          color: $blue;
+          line-height: 16px;
+          font-weight: 600;
+          padding: 12px 0px 12px 0px;
+        }
+      }
+    }
+
+    .col {
+      > div.business-price-1 {
+        .package-header {
+          background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+          border-radius: 24px 24px 0 0;
+        }
+        a.btn {
+          background-image: linear-gradient(142deg, #FF6A6A 21%, #C80000 100%);
+        }
+      }
+
+      > div.business-price-2 {
+        .package-header {
+          background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+          border-radius: 24px 24px 0 0;
+        }
+        a.btn {
+          background-image: linear-gradient(149deg, #F53ABF 9%, #D5008A 100%);
+        }
+      }
+    }
+  }
+}
+
+.tech_profile{
+  margin:0 auto;
+}
+.home-video{
+  width:100%;
+  height:650px;
+  object-fit: cover;
+
+}

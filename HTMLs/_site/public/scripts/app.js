@@ -134,6 +134,7 @@
                     loop: false,
                     spaceBetween: 0,
                     slidesPerView: 3,
+                    
 
                     centeredSlides: false,
                     breakpoints: {
@@ -222,7 +223,7 @@
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: "auto",
+                            slidesPerView: 4,
                             spaceBetween: 12
                         }
                     }
@@ -268,7 +269,7 @@
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: "auto",
+                            slidesPerView: 4,
                             spaceBetween: 12
                         }
                     }
@@ -311,7 +312,7 @@
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: "auto",
+                            slidesPerView: 4,
                             spaceBetween: 12
                         }
 
@@ -356,7 +357,7 @@
                             spaceBetween: 12
                         },
                         900: {
-                            slidesPerView: "auto",
+                            slidesPerView: 4,
                             spaceBetween: 12
                         }
 

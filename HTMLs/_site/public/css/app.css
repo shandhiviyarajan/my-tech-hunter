@@ -1699,6 +1699,7 @@ button.become-a-member {
 
 .addthis_inline_share_toolbox {
   position: relative;
+  margin: 24px 0px 0px 0px;
   z-index: 1000;
 }
 
@@ -2352,11 +2353,11 @@ span.badge-danger {
 }
 
 .available-hours,
-.search-tags {
+.search-tags-card {
   border-radius: 12px;
 }
 .available-hours .card-header,
-.search-tags .card-header {
+.search-tags-card .card-header {
   border-radius: 12px 12px 0px 0px;
   background: #fff;
   font-weight: 500;
@@ -2365,22 +2366,22 @@ span.badge-danger {
   text-align: left;
 }
 .available-hours .card-body,
-.search-tags .card-body {
+.search-tags-card .card-body {
   padding: 24px 24px 24px 24px;
 }
 .available-hours ul,
-.search-tags ul {
+.search-tags-card ul {
   margin: 0px;
   padding: 0px;
 }
 .available-hours ul li,
-.search-tags ul li {
+.search-tags-card ul li {
   padding: 3px 0px;
   list-style: none;
   color: #888;
 }
-
-.search-tags a.search-tag {
+.available-hours a.search-tag,
+.search-tags-card a.search-tag {
   float: left;
   text-decoration: none;
   border-radius: 24px;
@@ -2391,9 +2392,45 @@ span.badge-danger {
   padding: 6px 12px;
   margin: 0px 6px 6px 0px;
 }
-.search-tags a.search-tag:hover {
+.available-hours a.search-tag:hover,
+.search-tags-card a.search-tag:hover {
   background: #856e48;
   color: #fff;
+}
+
+.reviews-ratings-card .rating {
+  font-size: 32px;
+  font-weight: 400;
+  color: #856e48;
+}
+.reviews-ratings-card .rating span {
+  font-size: 14px;
+}
+.reviews-ratings-card div.card-header {
+  border-radius: 12px 12px 0px 0px;
+  background: #fff;
+  font-weight: 500;
+  padding: 8px 0px;
+  border: none;
+  text-align: left;
+}
+.reviews-ratings-card div.card-body {
+  padding: 24px;
+}
+.reviews-ratings-card div.d-flex {
+  align-items: baseline;
+  justify-content: space-between;
+}
+.reviews-ratings-card div.progress {
+  width: 80%;
+  height: 8px;
+  margin: 12px 0px;
+  border-radius: 12px;
+}
+.reviews-ratings-card div.progress div.progress-bar {
+  height: 8px;
+  background: #856e48;
+  border-radius: 12px;
 }
 
 .promotion-content {
