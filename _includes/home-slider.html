@@ -1,0 +1,123 @@
+---
+layout : default.html
+title : My Tech Hunter - HTML version
+---
+<div id="th-home-slider">
+  <div class="th-home-slider-search">
+
+    <div class="container">
+      <div class="row" no-gutters class="justify-content-center">
+        <div class="col-lg-12">
+          <div class="row no-gutters justify-content-center">
+            <div class="col-md-11 position-relative">
+              <div class="text">
+                <h3>
+                  What's your tech need? <br>
+                  Hunt it down and get it done!
+                </h3>
+                <form accept="!#">
+                  <div class="home-search-form">
+                    <div class="form-group">
+                      <div class="dropdown location-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown">
+                          Choose Location
+                        </button>
+                        <div class="dropdown-menu p-4">
+                          <label>
+                            Search location
+                          </label>
+                          <input type="text" class="form-control"
+                            placeholder="Location" />
+                          <button type="button" class="btn btn-sm">
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                      <input required placeholder="eg Tech support Networking, Cyber security, App Development"
+                        id="home-search-autocomplete" class="form-control">
+                      <button type="submit">
+                        <span class="icon-IconSearch"></span> Search
+                      </button>
+                    </div>
+
+                  </div>
+                </form>
+                <p>
+                  Get help, get support, bring your ideas to life with
+                  professional services
+                </p>
+                <div class="search-tags">
+                  <p>
+                    Most popular
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="/">
+                        Repair
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Tech Support
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Troubleshooting
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        Remote Support
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container" id="home_slides">
+      <div class="swiper-wrapper">
+     
+        <div class="swiper-slide">
+          <div class="source"
+            style="background:url('../public/images/tiger.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-1"
+            style="background:url('../public/images/slide-2.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-2"
+            style="background:url('../public/images/slide-4.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="source source-3"
+            style="background:url('../public/images/slide-3.jpg') center center
+            no-repeat; background-size:cover;"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="source">
+            <video autoplay class="home-video"
+              src="{{assets}}videos/video-home.mp4"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

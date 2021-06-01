@@ -1,0 +1,201 @@
+<header class="site-header" style="background:url('../public/images/tiger-header.jpg') center center
+    no-repeat; background-size:cover;">
+    <section>
+        <div class="top-header">
+            <div class="container">
+                <ul class="list-group list-group-horizontal">
+                    <li class="social-network fb">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-network tw">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="social-network in">
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        &nbsp;
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Advertisements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Why us ?
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary"
+                                data-bs-toggle="dropdown">
+                                Languages
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item" href="#">EN</li>
+                                <li class="dropdown-item" href="#">FR</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/" id="logo">
+                        <img style="width:100%;"
+                            src="{{assets}}images/logo-white.png" />
+                    </a>
+                </div>
+                <div class="col-md-8 py-4 d-flex justify-content-end
+                    align-content-center section-sign-in">
+
+                    <button data-bs-toggle="modal" data-bs-target="#becomeMemberModal" class="mr-4 become-a-member btn btn-primary">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Become a Member
+                    </button>
+
+
+
+                    <div class="dropdown mr-4 for-business">
+                        <button class="btn btn-primary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            Business
+                        </button>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li class="dropdown-item"><a
+                                    href="/become-tech-hunter">
+                                    <i class="fa fa-user-circle"
+                                        aria-hidden="true"></i> Become a Tech
+                                    Hunter Pro
+                                </a>
+                            </li>
+                            <li class="dropdown-item"> <a
+                                    href="/create-business">
+                                    <i class="fa fa-briefcase"
+                                        aria-hidden="true"></i>
+                                    Create a Business
+                                </a>
+                            </li>
+                            <li class="dropdown-item"> <a href="/create-post">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                    Post an
+                                    advertisement
+                                </a>
+                            </li>
+                            <li class="dropdown-item"> <a
+                                    href="/create-promotion">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
+                                    Post promotions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="dropdown profile-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                            data-bs-toggle="dropdown" type="button">
+                            <img src="{{assets}}images/profile.png"
+                                width="30" />
+                            Account
+                            <span class="icon-IconArrowDown"></span>
+                        </button>
+                        <div class="dropdown-menu">
+
+                            <ul>
+                                <li>
+                                    <div class="logged-profile-info d-flex">
+                                        <img src="{{assets}}images/profile.png"
+                                            width="72" height="72" class="mr-2"/>
+                                        <div>
+                                            <p class="m-0">
+                                                <strong>Andrew Emiliya</strong>
+                                                <a href="#" class="p-0">
+                                                    andrewemilya@gmail.com
+                                                </a>
+                                            </p>
+                                            <div class="badge-member">
+                                                Hunter Member
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>
+                                        Give feedback improve MyTechHunter
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileSettings"></span>Settings
+                                        & Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconProfileMessage"></span>
+                                        Messages
+
+                                        <span class="badge badge-success bg-success">
+                                            03
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="divider">
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-IconLogout"></span>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <button class="btn btn-icon ml-4">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge badge-danger">
+                            03
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header navigation-->
+    <section>
+        {{> nav}}
+    </section>
+    <!--close header navigation-->
+</header>

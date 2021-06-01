@@ -1,0 +1,640 @@
+.filter-card {
+  border: none;
+  border-radius:12px;
+  margin: 0px 0px 24px 0px;
+  padding: 0px;
+
+  .card-body {
+    padding: 0px;
+  }
+
+  .filter-alert {
+    padding: 24px 24px 6px 24px;
+    border-bottom: thin solid #d9d9d9;
+    display: flex;
+
+    p {
+      color: #000;
+      font-weight: 600;
+
+      span {
+        font-weight: 500;
+        color: $orange_light;
+      }
+    }
+  }
+
+  .filter-title {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+
+    padding: 24px 24px 6px 24px;
+  }
+
+  ul {
+    padding: 0px 24px 6px 24px;
+
+    li {
+      color: #747474;
+      padding: 6px 0px 6px 0px;
+      display: flex;
+      list-style: none;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+
+     
+label{
+  display:flex;
+}
+      input[type='checkbox']{
+        margin-right:12px;
+        width:20px;
+        height:20px;
+
+      }
+
+      &:hover{
+        label{
+          color:$primary;
+        }
+      }
+    }
+  }
+}
+
+.filter-card.promotions{
+
+.card-header{
+  color:#fff;
+  font-weight:bold;
+  border:none;
+}
+  ul{
+    li{
+      label{color:#fff;}
+    }
+  }
+}
+
+.single-service-info {
+  padding: $gutters;
+
+  h5 {
+    color: $primary;
+    font-weight: bold;
+    margin: 12px 0px;
+    font-size: 16px;
+  }
+
+  .service-info {
+    border: none;
+  }
+
+  .service_card .service_image {
+    height: auto !important;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 24px 0px 0px 0px;
+  }
+
+  .business-info-wrapper {
+    margin-left: 12px;
+  }
+  .business-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+
+  .business-views {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    p {
+      margin: 6px 0px;
+      font-weight: 500;
+    }
+
+    button {
+      box-shadow: none;
+      border: thin solid $primary;
+      color: $primary;
+      font-size: 14px;
+
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .business-messenger {
+    a,
+    button {
+      background: $primary;
+      color: #fff;
+
+      width: 100%;
+      line-height: 49px;
+      height: 52px;
+      font-size: 16px;
+      padding: 0px 24px;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+
+    button {
+      line-height: 0;
+    }
+  }
+
+  .business-followers {
+    margin: 6px 0px 0px 12px;
+    color: $orange;
+
+    button {
+      height: 32px;
+      line-height: 16px;
+      margin-left: 12px;
+    }
+  }
+
+
+
+  div.divider {
+    border-bottom: thin solid #d9d9d9;
+    margin: 24px -24px 0px -24px;
+  }
+
+  .single_page_desc {
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+.get-services-card {
+  background: #fff;
+  border: none;
+  margin-bottom: 24px;
+  border-radius: 12px;
+
+  .card-body {
+    padding: 24px;
+  }
+
+  ul {
+    padding: 0px;
+
+    li {
+      list-style: none;
+
+      a {
+        margin-bottom: 12px;
+        display: block;
+        background: #fff6ef;
+        text-decoration: none;
+        font-weight: 600;
+        color: #000;
+        padding: 16px 24px;
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+        border-radius: 12px;
+
+        span {
+          font-size: 18px;
+          margin-right: 6px;
+        }
+
+        &:hover {
+          background: #ffa638;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.single-service-categories {
+  margin: 24px 0px 24px 0px;
+
+  a {
+    font-size: 14px;
+    background: #ece6d9;
+    color: #856e48;
+    text-decoration: none;
+    margin-right: 12px;
+    padding: 6px 12px;
+    border-radius: 6px;
+
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
+}
+
+
+
+.single-service-info {
+  background: #ffffff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: none;
+
+  .customer_reviews {
+    border-radius: 8px 8px 0px 0px;
+
+    .card-body {
+      border-radius: 8px 8px 0px 0px;
+      padding: 0px 24px 24px 24px;
+    }
+
+    .card-header {
+      margin: 0px -24px 24px -24px;
+      background: $primary;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+}
+
+.gallery-thumbs {
+  padding: 0px 0px 0px 0px;
+
+  a {
+    display: inline-block;
+    margin: 0px 12px 0px 0px;
+    cursor: pointer;
+    border: 2px solid #fff;
+
+    border-radius: 12px;
+
+    &.active {
+      border: 2px solid $primary;
+    }
+
+    img {
+      opacity: 1;
+      transition: 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+#single_gallery {
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+}
+
+.price-container {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px 24px;
+
+  .discount-price {
+    font-size: 32px;
+    color: #000;
+    font-weight: 800;
+  }
+  .actual-price {
+    color: $primary;
+    font-size: 16px;
+    font-weight: 600;
+
+    p.line-through {
+      text-decoration: line-through;
+      color: $danger;
+      font-size: 18px;
+      margin: 0px;
+    }
+  }
+}
+
+.payment-options {
+  min-height: 100px;
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    display: inline-block;
+    margin: 0px 6px;
+  }
+}
+
+.customer_reviews {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+
+  .card-body {
+    img {
+      margin-right: 12px;
+    }
+
+    .star-ratings {
+      text-align: right;
+    }
+
+    .reviewer-info {
+      font-size: 14px;
+      margin: 0px;
+
+      span {
+        font-size: 12px;
+      }
+    }
+    .review_desc {
+      font-size: 14px;
+      font-style: italic;
+      color: #747474;
+    }
+  }
+
+  .card-header {
+    background: $primary;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 12px;
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+.like-reply-container {
+  display: flex;
+
+  .helpful,
+  .reply {
+    div {
+      background: $primary;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 24px;
+      text-align: Center;
+      padding: 3px 6px;
+      position: relative;
+      font-weight: bold;
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid $primary;
+        top: -5px;
+        position: absolute;
+        left: 50%;
+        margin-left: -6px;
+      }
+    }
+  }
+
+  button {
+    box-shadow: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    color: $primary;
+    outline: 0;
+  }
+}
+
+.write-a-review {
+  border-radius: 12px;
+  .card-body {
+    padding-top: 0px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+  .choose-star-rating {
+    padding: 24px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+
+    .emoji {
+      font-size: 32px;
+    }
+    i.fa {
+      cursor: pointer;
+      font-size: 26px;
+      color: rgb(189, 189, 189);
+    }
+    i.fa:hover {
+      color: rgb(255, 204, 0);
+    }
+    i.fa.selected {
+      color: rgb(255, 204, 0);
+    }
+  }
+
+  .card-header {
+    border-radius: 12px 12px 0px 0px;
+    background: $primary;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 12px;
+  }
+}
+
+.google-address-map {
+  border: none;
+  background: #fff;
+  border-radius: 12px;
+  #address-map {
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  ul {
+    background: #fff;
+    display: block;
+    padding: 48px 24px 0px 24px;
+    border-radius: 12px;
+    margin-top: -24px;
+    margin: 0px;
+    li {
+      list-style: none;
+      display: flex;
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+      color: #747474;
+
+      i {
+        font-size: 18px;
+        margin-right: 12px;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 14px;
+        color: #747474;
+      }
+
+      a {
+        color: rgb(0, 94, 255);
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      i.fa {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.available-hours,
+.search-tags-card {
+  border-radius: 12px;
+  .card-header {
+    border-radius: 12px 12px 0px 0px;
+    background: #fff;
+    font-weight: 500;
+    padding: 8px 0px;
+    border: none;
+    text-align: left;
+  }
+  .card-body {
+    padding: 24px 24px 24px 24px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    li {
+      padding: 3px 0px;
+      list-style: none;
+      color: $gray-300;
+    }
+  }
+  a.search-tag {
+    float: left;
+    text-decoration: none;
+    border-radius: 24px;
+    display: block;
+    background: #f1f1f1;
+    color: #000;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0px 6px 6px 0px;
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
+}
+
+.reviews-ratings-card{
+
+  .rating{
+    font-size:32px ;
+    font-weight:400;
+    color:$primary;
+    span{
+      font-size:14px;
+    }
+  }
+  div.card-header{
+    border-radius: 12px 12px 0px 0px;
+    background: #fff;
+    font-weight: 500;
+    padding: 8px 0px;
+    border: none;
+    text-align: left;
+  }
+  div.card-body{
+    padding:$gutters;
+  }
+  div.d-flex{
+    align-items: baseline;
+    justify-content: space-between;
+}
+  
+  div.progress{
+    width:80%;
+    height:8px;
+    margin:12px 0px;
+    border-radius:12px;
+    div.progress-bar{
+      height:8px;
+      background:$primary;
+      border-radius:12px;
+    }
+  }
+}
+
+
+
+.promotion-content {
+  background: #22C683;
+  padding: 6px 24px;
+  border-radius: 8px;
+  align-items: center;
+  margin: 6px 0px 0px 12px;
+  &.small-version{
+    height: 48px;
+  }
+  .percentage {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    margin-right: 12px;
+    display:block;
+  }
+
+  span.badge-success {
+    font-size: 16px;
+    margin-right: 12px;
+    line-height: 16px;
+  }
+
+  .promo-valid-date {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+
+    &.small-v{
+      width:120px; font-size:12px;
+    }
+  }
+}

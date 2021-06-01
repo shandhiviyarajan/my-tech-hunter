@@ -1,0 +1,61 @@
+---
+layout : default.html
+title : My Tech Hunter - HTML version
+---
+<div class="container auth-container">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="auth-page-title">
+              <h1>Great to have you back!</h1>
+              <h3>
+                You can sign in to <span>MyTechHunter</span> using your existing
+                account or Your Social Media
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-md-5">
+            <div class="form-title">Login</div>
+            <form @submit="Login">
+              <input class="form-control" type="email" required placeholder="Username" />
+              <input class="form-control" type="password" required placeholder="Password" />
+
+              <button class="btn mb-4 btn-block btn-primary">Login</button>
+
+              <div class="d-flex">
+                <b-checkbox value="1" class="mr-4"> Remember Me </b-checkbox>
+                <a href="/forgot-password">Forgot Password</a>
+              </div>
+              <div class="mt-4">
+                Don’t you have an account ?
+                <a href="/"> Create an account </a>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 pl-md-4 social-logins">
+            <div class="form-title">&nbsp;</div>
+            <button class="btn btn-fb">
+              <i class="fa fa-facebook"></i>
+              <span> Facebook</span>
+            </button>
+            <button class="btn btn-google">
+             <img src="{{assets}}svg/IconGoogle.svg"/>
+              <span> Google </span>
+            </button>
+            <button class="btn btn-linked-in">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span> Linked In </span>
+            </button>
+            <button class="btn btn-apple">
+              <i class="fa fa-apple"></i>
+              <span> Apple Sign in</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
