@@ -2398,6 +2398,14 @@ span.badge-danger {
   color: #fff;
 }
 
+.reviews-ratings-card .rating {
+  font-size: 32px;
+  font-weight: 400;
+  color: #856e48;
+}
+.reviews-ratings-card .rating span {
+  font-size: 14px;
+}
 .reviews-ratings-card div.card-header {
   border-radius: 12px 12px 0px 0px;
   background: #fff;
